@@ -12,7 +12,7 @@ export class HeroComponent {
 
   constructor(private router: Router) {}
 
-  register(path: string): void {
+  nav(path: string): void {
     this.router.navigate([path]);
   }
 
