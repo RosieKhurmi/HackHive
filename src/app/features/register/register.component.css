@@ -1,0 +1,36 @@
+.iframe-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.responsive-iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  overflow: auto;  /* scrollability */
+  transition: height 0.5s ease, width 0.5s ease;
+}
+
+/* For small screens*/
+@media (max-width: 768px) {
+  .responsive-iframe {
+    height: 500px;
+  }
+}
+/* For medium screens*/
+@media (min-width: 769px) and (max-width: 1200px) {
+  .responsive-iframe {
+    height: 700px;
+  }
+}
+
+/* For larger screens*/
+@media (min-width: 1201px) {
+  .responsive-iframe {
+    height: 800px;
+  }
+}
+
