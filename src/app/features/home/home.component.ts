@@ -3,7 +3,7 @@ import { MenuComponent } from '../../core/menu/menu.component';
 import { FooterComponent } from '../../core/footer/footer.component';
 import { HeroComponent } from '../../shared/hero/hero.component';
 import { PastComponent } from '../../shared/past/past.component';
-import { ButtonComponent } from "../../core/button/button.component";
+import { ContactComponent } from '../../shared/contact/contact.component';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +12,7 @@ import { ButtonComponent } from "../../core/button/button.component";
     FooterComponent,
     HeroComponent,
     PastComponent,
-    ButtonComponent
+    ContactComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
