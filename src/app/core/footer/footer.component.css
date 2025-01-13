@@ -1,30 +1,49 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0; /* Add some padding for spacing */
-    position: relative; /* Relative positioning */
-    width: 100%; /* Ensure it spans the full width */
-    bottom: 0; /* Aligns the footer to the bottom */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  /* Add some padding for spacing */
+  position: fixed;
+  /* Relative positioning */
+  width: 100%;
+  /* Ensure it spans the full width */
+  bottom: 0;
+  /* Aligns the footer to the bottom */
+  left: 0;
+  /* Aligns the footer to the left */
+  background-color: #f8f9fa;
+  color: #212529;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    flex: 0 0 auto; /* Ensures the logo stays on the left */
-    padding-left: 10px;
+  flex: 0 0 auto; /* Ensures the logo stays on the left */
+  padding-left: 10px;
 }
 
 .socials ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding-right: 20px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-right: 20px;
+  text-decoration: none;
+  color: #495057;
+  margin-right: 15px;
+  transition: color 0.2s;
 }
 
 .socials ul li {
-    margin-left: 20px; /* Spacing between menu items */
+  margin-left: 20px; /* Spacing between menu items */
 }
 
 .socials ul li a {
-    text-decoration: none;
-    color: inherit; /* Maintain text color */
+  text-decoration: none;
+  color: inherit; /* Maintain text color */
+  transition: color 0.5s; /* Smooth color transition */
+}
+
+.socials ul li a:hover {
+  color: #007bff; /* Change text color on hover */
+  transition: color 0.5s; /* Smooth color transition */
 }
