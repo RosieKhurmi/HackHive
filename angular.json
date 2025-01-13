@@ -21,7 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/assests",
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
