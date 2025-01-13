@@ -1,13 +1,14 @@
-import { Component, Input, input} from '@angular/core';
+import { Component, Input, Output} from '@angular/core';
 
 @Component({
-  selector: 'button[app-button]',
+  selector: 'button[appButton]',
   imports: [],
   templateUrl: './button.component.html',
   styleUrl: './button.component.css'
 })
 export class ButtonComponent {
 
-  @Input() label: string = ''
+  @Input() label: string = '';
 
 }
+
