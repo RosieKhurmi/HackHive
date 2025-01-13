@@ -1,0 +1,5 @@
+img {
+    width: 200px; /* Set the desired width */
+    overflow: hidden; /* Hide parts of the image that overflow */
+    position: relative;
+}

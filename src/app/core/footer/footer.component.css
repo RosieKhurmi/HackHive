@@ -1,28 +1,31 @@
-.menu-bar {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0; /* Add some padding for spacing */
-    background-color: beige
+    padding: 10px 0; /* Add some padding for spacing */
+    background-color: azure;
+    position: relative; /* Relative positioning */
+    width: 100%; /* Ensure it spans the full width */
+    bottom: 0; /* Aligns the footer to the bottom */
 }
 
 .logo {
     flex: 0 0 auto; /* Ensures the logo stays on the left */
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
-.links ul {
+.socials ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding-right: 20px;
 }
 
-.links ul li {
+.socials ul li {
     margin-left: 20px; /* Spacing between menu items */
 }
 
-.links ul li a {
+.socials ul li a {
     text-decoration: none;
     color: inherit; /* Maintain text color */
 }

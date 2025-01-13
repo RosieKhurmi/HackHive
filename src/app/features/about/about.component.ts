@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { MenuComponent } from '../../core/menu/menu.component'; 
 
 @Component({
-  selector: 'app-theme',
+  selector: 'app-about',
   imports: [MenuComponent],
-  templateUrl: './theme.component.html',
-  styleUrl: './theme.component.css'
+  templateUrl: './about.component.html',
+  styleUrl: './about.component.css'
 })
-export class ThemeComponent {
+export class AboutComponent {
 
 }

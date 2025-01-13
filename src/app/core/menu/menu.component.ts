@@ -3,7 +3,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
@@ -16,8 +16,8 @@ export class MenuComponent {
       routeLink: '/'
     },
     {
-      label: 'Theme',
-      routeLink: '/theme'
+      label: 'About',
+      routeLink: '/about'
     },
     {
       label: 'Sponsors',
