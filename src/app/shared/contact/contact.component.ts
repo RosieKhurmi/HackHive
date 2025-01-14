@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
+import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from "../../core/button/button.component";
+import { environment } from '../../../enviroments/environment.uas';
 
 @Component({
   selector: 'app-contact',
   imports: [
     ButtonComponent, 
     ReactiveFormsModule, 
-    CommonModule
+    CommonModule, 
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
@@ -18,6 +20,10 @@ export class ContactComponent implements OnInit {
   title = 'Contact Us';
   contactForm!: FormGroup;
   isValid : boolean = false;
+
+  emailServiceId = environment.emailjs.serviceId;
+  emailTemplateId = environment.emailjs.templateId;
+  emailUserId = environment.emailjs.userId;
 
   ngOnInit() {
 
@@ -30,9 +36,17 @@ export class ContactComponent implements OnInit {
 
   }
 
-  onSubmit() {
-    const isValid = this.contactForm.valid;
-    console.log(isValid);
+  async onSubmit() {
+    emailjs.init(this.emailUserId);
+    let response = await emailjs.send(this.emailServiceId,this.emailTemplateId{
+      from_name: this.contactForm.value.name,
+      to_name: "OTU CS Club",
+      message: this.contactForm.value.message,
+      reply_to: this.contactForm.value.email,
+    });
+
+    alert("Message sent successfully!");
+    this.contactForm.reset();
   }
 
 }

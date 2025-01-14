@@ -1,5 +1,5 @@
 <h3>Questions?</h3>
-<form style="display: flex; flex-direction: column;" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<form style="display: flex; flex-direction: column;" [formGroup]="contactForm" (ngSubmit)="onSubmit()" action="javascrpit:void(0)">
     
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" formControlName="name"/>
@@ -22,3 +22,5 @@
 
     <input type="submit" value="Submit"/>
 </form>
+
+
