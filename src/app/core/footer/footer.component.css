@@ -3,8 +3,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  /* Add some padding for spacing */
-  position: fixed;
   /* Relative positioning */
   width: 100%;
   /* Ensure it spans the full width */
