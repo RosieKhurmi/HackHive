@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
-import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from "../../core/button/button.component";
 import { environment } from '../../../enviroments/environment.uas';
@@ -10,7 +10,7 @@ import { environment } from '../../../enviroments/environment.uas';
   imports: [
     ButtonComponent, 
     ReactiveFormsModule, 
-    CommonModule, 
+    CommonModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
@@ -38,10 +38,10 @@ export class ContactComponent implements OnInit {
 
   async onSubmit() {
     emailjs.init(this.emailUserId);
-    let response = await emailjs.send(this.emailServiceId,this.emailTemplateId{
+    let response = await emailjs.send(this.emailServiceId,this.emailTemplateId, {
       from_name: this.contactForm.value.name,
       to_name: "OTU CS Club",
-      message: this.contactForm.value.message,
+      message: this.contactForm.value.message, 
       reply_to: this.contactForm.value.email,
     });
 
