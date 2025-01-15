@@ -1,17 +1,17 @@
 [
     {
         "name": "Kyndryl",
-        "logo": "assets/images/Kyndryl_Logo.jpg",
+        "logo": "assets/images/kyndryl_logo.png",
         "url": "https://www.sponsor1.com",
-        "tier": "gold", 
-        "description": ""
+        "tier": "platinum", 
+        "description": "Dewription "
     },
     {
         "name": "Dayforce",
         "logo": "assets/images/dayforce_logo.png",
         "url": "https://www.sponsor2.com",
-        "tier": "gold",
-        "description": ""
+        "tier": "platinum",
+        "description": "Description "
     },
     {
         "name": "Brilliant Catalyst",

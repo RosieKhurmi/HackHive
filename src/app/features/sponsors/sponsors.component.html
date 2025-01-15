@@ -2,7 +2,9 @@
 
 <div *ngFor="let s of sponsors">
     <app-sponsor-card 
-        [image]="{src: s.logo, alt: s.name}">
+        [image]="{src: s.logo, alt: s.name}"
+        tier="{{s.tier}}"
+        description="{{s.description}}">
     </app-sponsor-card>
     <div style="height: 20px"></div>
 </div>

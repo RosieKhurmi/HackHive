@@ -1,6 +1,18 @@
-<img style="height: 50px; background-color: aliceblue;"
-    [src]="image().src" 
-    [alt]="image().alt" 
-/>
+<div class="sponsor-card" 
+    [ngClass]="{
+    'gold-tier': tier() === 'gold',
+    'silver-tier': tier() === 'silver',
+    'platinum-tier': tier() === 'platinum'
+    }">
 
+    <img style="height: 50px; background-color: aliceblue;"
+        [src]="image().src" 
+        [alt]="image().alt" 
+    />
+
+    <div *ngIf="tier() === 'platinum'" class="platinum-tier-content">
+        <p>{{description}}</p>
+    </div>
+
+</div>
 
