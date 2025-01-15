@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0; /* Add some padding for spacing */
-    background-color: beige
-
+    background-color: beige;
+    border-bottom: #000;
 }
 
 .logo {
@@ -17,19 +17,22 @@
     list-style: none;
     margin: 0;
     padding-right: 20px;
+    overflow: hidden; /* Prevent overflow */
 }
 
 .links ul li {
-    margin-left: 20px; /* Spacing between menu items */
+    margin-left: 0; /* Remove spacing between menu items */
 }
 
-.links ul li a {
-    text-decoration: none;
-    color: inherit; /* Maintain text color */
+.links li a p svg {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    fill: #000; /* Set the fill color */
+    transition: fill 0.3s ease-in-out; /* Smooth transition */
 }
 
-.img {
-    width: 200px; /* Set the desired width */
-    overflow: hidden; /* Hide parts of the image that overflow */
-    position: relative;
+.links li a:hover p svg {
+    fill: orange; /* Change the fill color on hover */
+    transition: fill 0.3s ease-in-out; /* Smooth transition */
 }
