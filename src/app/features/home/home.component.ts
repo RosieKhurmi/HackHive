@@ -1,23 +1,21 @@
-import { Component } from '@angular/core';
-import { MenuComponent } from '../../core/menu/menu.component'; 
-import { FooterComponent } from '../../core/footer/footer.component';
-import { HeroComponent } from '../../shared/hero/hero.component';
-import { PastComponent } from '../../shared/past/past.component';
-import { ContactComponent } from '../../shared/contact/contact.component';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MenuComponent } from '../../core/menu/menu.component';
+import { FooterComponent } from "../../core/footer/footer.component"; 
+import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
 
 @Component({
   selector: 'app-home',
-  imports: [
-    MenuComponent,
-    FooterComponent,
-    HeroComponent,
-    PastComponent,
-    ContactComponent
-],
+  imports: [MenuComponent, FooterComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  standalone: true,
+  styleUrl: './home.component.css',
+  encapsulation: ViewEncapsulation.None // ! This is necessary to apply styles to the dynamic SVGs
 })
-
 export class HomeComponent {
+  computerMan;
 
+  constructor(private sanitizer: DomSanitizer) {
+    this.computerMan = this.sanitizer.bypassSecurityTrustHtml(computerMan);
+  }
 }
