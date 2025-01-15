@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-sponsor-card',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './sponsor-card.component.css'
 })
 export class SponsorCardComponent {
+
+  image = input.required<{src: string; alt: string} >();
 
 }

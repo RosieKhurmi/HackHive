@@ -1,2 +1,9 @@
 <app-menu></app-menu>
+
+<div *ngFor="let s of sponsors">
+    <app-sponsor-card 
+        [image]="{src: s.logo, alt: s.name}">
+    </app-sponsor-card>
+</div>
+
 <app-footer></app-footer>

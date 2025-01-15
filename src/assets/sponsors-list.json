@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Kyndryl",
+        "logo": "../../assets/logos/Kyndryl_Logo.jpg",
+        "url": "https://www.sponsor1.com",
+        "tier": "gold", 
+        "description": ""
+    },
+    {
+        "name": "Dayforce",
+        "logo": "../../assets/images/sponsors/Dayforce.png",
+        "url": "https://www.sponsor2.com",
+        "tier": "gold",
+        "description": ""
+    },
+    {
+        "name": "Brilliant Catalyst",
+        "logo": "../../assets/images/sponsors/brilliant_catalyst.png",
+        "url": "https://www.sponsor3.com",
+        "tier": "bronze"
+    }
+]
