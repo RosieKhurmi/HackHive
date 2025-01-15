@@ -12,7 +12,7 @@ import email from '../../../assets/icons/email.svg';
   templateUrl: './menu.component.html',
   standalone: true,
   styleUrl: './menu.component.css',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None, // ! This is necessary to apply styles to the dynamic SVGs
 })
 
 export class MenuComponent {
@@ -41,6 +41,8 @@ export class MenuComponent {
   email;
 
   constructor(private sanitizer: DomSanitizer) {
+    // SVGs are dynamically loaded and Angular's security
+    // would otherwise block them as potentially unsafe content
     this.linkedin = this.sanitizer.bypassSecurityTrustHtml(linkedin);
     this.instagram = this.sanitizer.bypassSecurityTrustHtml(instagram);
     this.x = this.sanitizer.bypassSecurityTrustHtml(x);
