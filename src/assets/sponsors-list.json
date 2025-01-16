@@ -18,5 +18,23 @@
         "logo": "assets/images/brilliant_catalyst_logo.png",
         "url": "https://www.sponsor3.com",
         "tier": "bronze"
+    },
+    {
+        "name": "Science Council",
+        "logo": "assets/images/science_council_logo.png",
+        "url": "https://www.sponsor3.com",
+        "tier": "bronze"
+    },
+    {
+        "name": "Google",
+        "logo": "assets/images/google_logo.png",
+        "url": "https://www.sponsor3.com",
+        "tier": "collaborator"
+    },
+    {
+        "name": "Microsoft",
+        "logo": "assets/images/microsoft_logo.png",
+        "url": "https://www.sponsor3.com",
+        "tier": "collaborator"
     }
 ]
