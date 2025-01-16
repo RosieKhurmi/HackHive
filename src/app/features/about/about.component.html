@@ -2,56 +2,55 @@
 <app-hero></app-hero>
 
 <!-- Challenges -->
-<section class="bg-white flex flex-col items-center justify-center">
+<section class="bg-zinc-500 flex flex-col items-center justify-center py-8">
 
-    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center">
-      Challenges
-    </h2>
+    <div class="container xl:max-w-90%">
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center">
+        Challenges
+        </h2>
+
+        <div class="flex overflow-x-auto snap-x snap-mandatory 2x5:justify-center">
+            <app-challenges [text]="{
+            challenge: 'Challenge 1',
+            name: 'Empowering Learning and Development',
+            description: 'Design AI-powered platforms to make learning more engaging and personalized',
+            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+            }">
+    
+            </app-challenges>
+            <app-challenges [text]="{
+            challenge: 'Challenge 2',
+            name: 'Empowering Learning and Development',
+            description: 'Design AI-powered platforms to make learning more engaging and personalized',
+            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+            }">
+            </app-challenges>
+    
+            <app-challenges [text]="{
+            challenge: 'Challenge 3',
+            name: 'Empowering Learning and Development',
+            description: 'Design AI-powered platforms to make learning more engaging and personalized',
+            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+            }">
+            </app-challenges>
+    
+            <app-challenges [text]="{
+            challenge: 'Challenge 4',
+            name: 'Empowering Learning and Development',
+            description: 'Design AI-powered platforms to make learning more engaging and personalized',
+            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+            }">
+            </app-challenges>
+    
+            <app-challenges [text]="{
+            challenge: 'Challenge 5',
+            name: 'Empowering Learning and Development',
+            description: 'Design AI-powered platforms to make learning more engaging and personalized',
+            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+            }">
+            </app-challenges>
   
-    <div class="container xl:max-w-full" style="margin: 20px 0;">
-      <div class="flex overflow-x-auto gap-6 snap-x snap-mandatory 2xl:justify-center">
-  
-        <app-challenges [text]="{
-          challenge: 'Challenge 1',
-          name: 'Empowering Learning and Development',
-          description: 'Design AI-powered platforms to make learning more engaging and personalized',
-          example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-        }">
-  
-        </app-challenges>
-        <app-challenges [text]="{
-          challenge: 'Challenge 2',
-          name: 'Empowering Learning and Development',
-          description: 'Design AI-powered platforms to make learning more engaging and personalized',
-          example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-        }">
-        </app-challenges>
-  
-        <app-challenges [text]="{
-          challenge: 'Challenge 3',
-          name: 'Empowering Learning and Development',
-          description: 'Design AI-powered platforms to make learning more engaging and personalized',
-          example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-        }">
-        </app-challenges>
-  
-        <app-challenges [text]="{
-          challenge: 'Challenge 4',
-          name: 'Empowering Learning and Development',
-          description: 'Design AI-powered platforms to make learning more engaging and personalized',
-          example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-        }">
-        </app-challenges>
-  
-        <app-challenges [text]="{
-          challenge: 'Challenge 5',
-          name: 'Empowering Learning and Development',
-          description: 'Design AI-powered platforms to make learning more engaging and personalized',
-          example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-        }">
-        </app-challenges>
-  
-      </div>
+        </div>
     </div>
   
   </section>
@@ -220,9 +219,6 @@
     </div>
   </section>
   
-  
-
-<app-contact></app-contact>
 
 <app-footer></app-footer>
 
