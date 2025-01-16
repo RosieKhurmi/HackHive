@@ -3,16 +3,17 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angula
 import emailjs from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from "../../core/button/button.component";
-import { environment } from '../../../enviroments/environment.uas';
+import { environment } from '../../../environments/environment.uas';
 
 @Component({
   selector: 'app-contact',
   imports: [
-    ButtonComponent, 
+    ButtonComponent,
     ReactiveFormsModule,
     CommonModule,
   ],
   templateUrl: './contact.component.html',
+  standalone: true,
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit {
@@ -41,7 +42,7 @@ export class ContactComponent implements OnInit {
     let response = await emailjs.send(this.emailServiceId,this.emailTemplateId, {
       from_name: this.contactForm.value.name,
       to_name: "OTU CS Club",
-      message: this.contactForm.value.message, 
+      message: this.contactForm.value.message,
       reply_to: this.contactForm.value.email,
     });
 
