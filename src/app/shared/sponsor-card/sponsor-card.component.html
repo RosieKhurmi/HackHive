@@ -1,1 +1,20 @@
-<p>sponsor-card works!</p>
+<div class="sponsor-card" 
+    [ngClass]="{
+    'top': tier() === 'platinum',
+    'other': tier() === 'silver' 
+        || tier() === 'bronze' 
+        || tier() === 'gold'
+        || tier() === 'collaborator'
+    }">
+
+    <img style="height: 50px; background-color: aliceblue;"
+        [src]="image().src" 
+        [alt]="image().alt" 
+    />
+
+    <div *ngIf="tier() === 'platinum'">
+        <p>{{description}}</p>
+    </div>
+
+</div>
+
