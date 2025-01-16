@@ -43,7 +43,7 @@
 <!-- General Description -->
 <section class="bg-zinc-100 border-b py-8">
   <div class="container max-w-5xl mx-auto m-8">
-    
+
     <p class="w-full my-2 text-5xl font-bold leading-tight">
       What's HackHive?
     </p>
@@ -79,6 +79,45 @@
     </div>
   </div>
 </section>
+
+<!--Countdown-->
+<section class="bg-zinc-100 border-b py-8">
+
+    <div class="hex-grid decorative">
+      <!-- Decorative Hexagons -->
+      <div class="hex"></div>
+      <div class="hex"></div>
+      <div class="hex"></div>
+      <div class="hex"></div>
+      <div class="hex"></div>
+      <div class="hex"></div>
+    </div>
+    <div class="countdown-container">
+      <h1 class="countdown-header">Get Hacking In...</h1>
+      <div class="hex-grid countdown">
+        <!-- Main Countdown Hexagons -->
+        <div class="hex large">
+          <span class="digit">{{ timeLeft.days }}</span>
+          <small>Days</small>
+        </div>
+        <div class="hex large">
+          <span class="digit">{{ timeLeft.hours }}</span>
+          <small>Hours</small>
+        </div>
+        <div class="hex large">
+          <span class="digit">{{ timeLeft.minutes }}</span>
+          <small>Minutes</small>
+        </div>
+        <div class="hex large">
+          <span class="digit">{{ timeLeft.seconds }}</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+    </div>
+
+
+</section>
+
 
 <section class="bg-zinc-100 border-b py-8">
   <div class="container max-w-5xl mx-auto m-8mt-8">
