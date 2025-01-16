@@ -1,12 +1,20 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { MenuComponent } from '../../core/menu/menu.component';
 import { FooterComponent } from "../../core/footer/footer.component"; 
+import { ButtonComponent } from "../../core/button/button.component"; 
+import { ChallengesComponent } from '../../shared/challenges/challenges.component';
 import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
 
 @Component({
   selector: 'app-home',
-  imports: [MenuComponent, FooterComponent],
+  imports: [
+    MenuComponent, 
+    FooterComponent, 
+    ButtonComponent,
+    ChallengesComponent
+  ],
   templateUrl: './home.component.html',
   standalone: true,
   styleUrl: './home.component.css',
@@ -15,7 +23,12 @@ import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
 export class HomeComponent {
   computerMan;
 
-  constructor(private sanitizer: DomSanitizer) {
+  constructor(private sanitizer: DomSanitizer, private router: Router) {
     this.computerMan = this.sanitizer.bypassSecurityTrustHtml(computerMan);
   }
+
+  nav(path: string): void {
+    this.router.navigate([path]);
+  }
+  
 }

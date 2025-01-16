@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MenuComponent } from '../../core/menu/menu.component'; 
 import { FooterComponent } from '../../core/footer/footer.component';
 import { HeroComponent } from '../../shared/hero/hero.component';
-import { PastComponent } from '../../shared/past/past.component';
+import { ChallengesComponent } from '../../shared/challenges/challenges.component';
 import { ContactComponent } from '../../shared/contact/contact.component';
 
 @Component({
@@ -11,7 +11,7 @@ import { ContactComponent } from '../../shared/contact/contact.component';
     MenuComponent,
     FooterComponent,
     HeroComponent,
-    PastComponent,
+    ChallengesComponent,
     ContactComponent
 ],
   templateUrl: './about.component.html',

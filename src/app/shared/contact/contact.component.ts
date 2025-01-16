@@ -9,8 +9,8 @@ import { environment } from '../../../enviroments/environment.uas';
   selector: 'app-contact',
   imports: [
     ButtonComponent, 
-    ReactiveFormsModule, 
-    CommonModule
+    ReactiveFormsModule,
+    CommonModule,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'

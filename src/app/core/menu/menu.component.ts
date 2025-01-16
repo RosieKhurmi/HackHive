@@ -10,9 +10,8 @@ import email from '../../../assets/icons/email.svg';
   selector: 'app-menu',
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './menu.component.html',
-  standalone: true,
   styleUrl: './menu.component.css',
-  encapsulation: ViewEncapsulation.None, // ! This is necessary to apply styles to the dynamic SVGs
+  encapsulation: ViewEncapsulation.None, 
 })
 
 export class MenuComponent {

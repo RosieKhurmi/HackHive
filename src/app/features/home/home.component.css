@@ -1,0 +1,19 @@
+.gradient-text {
+    background: linear-gradient(
+      to right,
+      rgb(43, 43, 49),
+      rgb(131, 67, 192),
+      rgb(43, 43, 49)
+    );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 10s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
