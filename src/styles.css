@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --background: #f4f4f5;
+    --background-secondary: #ffffff;
+    --foreground: #3e3e41;
+    --foreground-hover: #d97706;
+    --foreground-secondary: #4d4d53;
+    --foreground-secondary-hover: #b45309;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #1d1622;
+      --background-secondary: #1b1a22;
+      --foreground: #ffffff;
+      --foreground-hover: #e9c2f5;
+      --foreground-secondary: #e7e7fa;
+      --foreground-secondary-hover: #7946f0;
+    }
+}
+  
