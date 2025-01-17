@@ -1,0 +1,53 @@
+<div class="container max-w-5xl mx-auto m-8mt-8">
+    <p class="w-full my-2 text-4xl font-bold leading-tight">
+      HackHive 2025 Itinerary
+    </p>
+    <h1 class="bg-yellow-400 text-yellow-900 text-3x1 font-semibold px-8 py-1 mb-2 w-fit">
+      Feburary 7-9, 2025
+    </h1>
+    <div class="flex">
+        <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        <div class="flex flex-col">
+            <span class="text-gray-700">Ontario Tech University</span>
+            <span class="text-gray-500">2000 Simcoe St N, Oshawa, ON L1G 0C5</span>
+        </div>
+    </div>
+    <div>
+        <div class="flex items-center mb-2">
+            <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+            <span class="text-gray-700">Programs</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-8">
+            <span class="bg-yellow-100 text-yellow-800 transition hover:bg-yellow-500 hover:text-yellow-900 text-sm px-3 py-1 rounded-full">Computer Science</span>
+            <span class="bg-yellow-100 text-yellow-800 transition hover:bg-yellow-500 hover:text-yellow-900 text-sm px-3 py-1 rounded-full">Software Engineering</span>
+            <span class="bg-yellow-100 text-yellow-800 transition hover:bg-yellow-500 hover:text-yellow-900 text-sm px-3 py-1 rounded-full">IT & Networking</span>
+            <span class="bg-yellow-100 text-yellow-800 transition hover:bg-yellow-500 hover:text-yellow-900 text-sm px-3 py-1 rounded-full">Business</span>
+            <span class="bg-yellow-100 text-yellow-800 transition hover:bg-yellow-500 hover:text-yellow-900 text-sm px-3 py-1 rounded-full">Game Development</span>
+            <span class="bg-yellow-100 text-yellow-800 transition hover:bg-yellow-500 hover:text-yellow-900 text-sm px-3 py-1 rounded-full">Marketing</span>
+        </div>
+    </div>
+
+    <app-expandable
+        [title]="'Day 1: Opening Ceremony'"
+        [description]="'Kick off the event with an inspiring keynote and networking opportunities.'"
+        [points]="[
+        { title: '9:00 AM', details: 'Registration and Welcome Breakfast.' },
+        { title: '10:00 AM', details: 'Keynote Speech by Jane Doe.' },
+        { title: '11:30 AM', details: 'Panel Discussion: The Future of Tech.' }
+        ]"
+        [expandableTitle]="'Schedule'"
+        [expandableContent]="[
+        { title: 'Dress Code', details: ['Business Casual.'] },
+        { title: 'Location', details: ['Main Hall, Tech Conference Center.'] }
+        ]"
+    >
+    </app-expandable>
+
+</div>
+
+

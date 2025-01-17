@@ -6,8 +6,8 @@ import { FooterComponent } from "../../core/footer/footer.component";
 import { ButtonComponent } from "../../core/button/button.component";
 import { ContactComponent } from "../../shared/contact/contact.component";
 import { ChallengesComponent } from '../../shared/challenges/challenges.component';
+import { ItineraryComponent } from '../../itinerary/itinerary.component';
 import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
-import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +17,7 @@ import { interval, Subscription } from 'rxjs';
     ButtonComponent,
     ChallengesComponent,
     ContactComponent,
+    ItineraryComponent
   ],
   templateUrl: './home.component.html',
   standalone: true,
