@@ -80,37 +80,18 @@
   </div>
 </section>
 
+
 <!--Countdown-->
 <section class="bg-zinc-100 border-b py-8">
-  <div class="countdown-container">
-    <h1 class="countdown-header">Get Hacking In...</h1>
-    <div class="hex-grid countdown">
-      <!-- Main Countdown Hexagons -->
-      <div class="hex large">
-        <span class="digit">{{ timeLeft.days }}</span>
-        <small>Days</small>
-      </div>
-      <div class="hex large">
-        <span class="digit">{{ timeLeft.hours }}</span>
-        <small>Hours</small>
-      </div>
-      <div class="hex large">
-        <span class="digit">{{ timeLeft.minutes }}</span>
-        <small>Minutes</small>
-      </div>
-      <div class="hex large">
-        <span class="digit">{{ timeLeft.seconds }}</span>
-        <small>Seconds</small>
-      </div>
-    </div>
-  </div>
+  <app-countdown></app-countdown>
 </section>
+
 
 <!-- Itinerary -->
 <section class="bg-zinc-100 border-b py-8">
 
   <app-itinerary></app-itinerary>
-  
+
 
 </section>
 
