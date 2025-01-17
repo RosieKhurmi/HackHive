@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SlideshowComponent } from './slideshow.component';
+import { ExpandableComponent } from './expandable.component';
 
-describe('SlideshowComponent', () => {
-  let component: SlideshowComponent;
-  let fixture: ComponentFixture<SlideshowComponent>;
+describe('ExpandableComponent', () => {
+  let component: ExpandableComponent;
+  let fixture: ComponentFixture<ExpandableComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SlideshowComponent]
+      imports: [ExpandableComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SlideshowComponent);
+    fixture = TestBed.createComponent(ExpandableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
