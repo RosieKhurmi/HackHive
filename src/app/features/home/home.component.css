@@ -36,7 +36,7 @@
     50% 100%,
     0% 75%,
     0% 25%
-  ); /* Hexagon Shape */
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,13 +45,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Can Remove this */
-.hex.large:hover {
-  transform: translateY(-10px) scale(1.1);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 215, 0, 1);
-}
-
-/* Countdown Digits */
 .digit {
   font-size: 3.5rem;
   font-weight: bold;
@@ -60,7 +53,6 @@
   line-height: 1.2;
 }
 
-/* Unit Labels */
 .hex.large small {
   font-size: 1rem;
   color: #ffffff;
