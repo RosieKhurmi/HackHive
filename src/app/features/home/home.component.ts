@@ -15,7 +15,7 @@ import { interval, Subscription } from 'rxjs';
     MenuComponent,
     FooterComponent,
     ButtonComponent,
-    ChallengesComponent, 
+    ChallengesComponent,
     ContactComponent,
   ],
   templateUrl: './home.component.html',
@@ -32,8 +32,8 @@ export class HomeComponent  implements OnInit, OnDestroy{
     seconds: 0,
   };
 
-  private intervalId!: ReturnType<typeof setInterval>; // TypeScript ensures this is a proper interval ID
-  private targetDate: Date = new Date('2025-02-07T00:00:00'); // Set the target date
+  private intervalId!: ReturnType<typeof setInterval>;
+  private targetDate: Date = new Date('2025-02-07T19:00:00'); // Feb 7th, 2025, 7PM
 
   constructor(private sanitizer: DomSanitizer, private router: Router) {
     this.computerMan = this.sanitizer.bypassSecurityTrustHtml(computerMan);
