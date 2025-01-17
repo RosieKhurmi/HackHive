@@ -39,15 +39,22 @@ export class ContactComponent implements OnInit {
 
   async onSubmit() {
     emailjs.init(this.emailUserId);
-    let response = await emailjs.send(this.emailServiceId,this.emailTemplateId, {
-      from_name: this.contactForm.value.name,
-      to_name: "OTU CS Club",
-      message: this.contactForm.value.message,
-      reply_to: this.contactForm.value.email,
-    });
 
-    alert("Message sent successfully!");
-    this.contactForm.reset();
+    if(!(this.contactForm.value.name)|| !(this.contactForm.value.message) || !(this.contactForm.value.email)) {
+      alert("Fill in the required fields");
+    }
+    else {
+      let response = await emailjs.send(this.emailServiceId,this.emailTemplateId, {
+        from_name: this.contactForm.value.name,
+        to_name: "OTU CS Club",
+        message: this.contactForm.value.message,
+        reply_to: this.contactForm.value.email,
+      });
+      alert("Message sent successfully!");
+      this.contactForm.reset();
+    }
+
+
   }
 
 }
