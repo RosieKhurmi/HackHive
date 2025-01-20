@@ -1,137 +1,137 @@
-<app-menu></app-menu>
-<app-hero></app-hero>
+<section class="bg-gradient-to-b from-yellow-500 via-amber-400 to-amber-500 dark:from-violet-800 dark:via-purple-900 dark:to-violet-900 h-screen">
 
-<!-- Challenges -->
-<section class="bg-zinc-500 flex flex-col items-center justify-center py-8">
+    <app-menu></app-menu>
+    <app-hero></app-hero>
 
-    <h2 class="text-4xl font-bold">Challenges</h2>
-    <div class="container xl:max-w-90%">
-        <div class="flex overflow-x-auto snap-x snap-mandatory 2x5:justify-center">
-            <app-challenges [text]="{
-            challenge: 'Challenge 1',
-            name: 'Empowering Learning and Development',
-            description: 'Design AI-powered platforms to make learning more engaging and personalized',
-            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-            }">
-    
-            </app-challenges>
-            <app-challenges [text]="{
-            challenge: 'Challenge 2',
-            name: 'Empowering Learning and Development',
-            description: 'Design AI-powered platforms to make learning more engaging and personalized',
-            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-            }">
-            </app-challenges>
-    
-            <app-challenges [text]="{
-            challenge: 'Challenge 3',
-            name: 'Empowering Learning and Development',
-            description: 'Design AI-powered platforms to make learning more engaging and personalized',
-            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-            }">
-            </app-challenges>
-    
-            <app-challenges [text]="{
-            challenge: 'Challenge 4',
-            name: 'Empowering Learning and Development',
-            description: 'Design AI-powered platforms to make learning more engaging and personalized',
-            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-            }">
-            </app-challenges>
-    
-            <app-challenges [text]="{
-            challenge: 'Challenge 5',
-            name: 'Empowering Learning and Development',
-            description: 'Design AI-powered platforms to make learning more engaging and personalized',
-            example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
-            }">
-            </app-challenges>
-  
-        </div>
-    </div>
-  
-  </section>
+    <!-- Challenges -->
+    <section class="bg-zinc-500 flex flex-col items-center justify-center py-8">
 
-<!-- Judging Criteria -->
-<section class="bg-zinc-100">
-    <h2 class="text-4xl font-bold">Participant Guidelines</h2>
-    <div>
-        <div>
-            <h3 class="text-2xl font-bold">Flexibility</h3>
-            <p>We are encouraging participants to use any technologies or services they are comfortable with, adjusting as necessary to align with their solution's needs.</p>
+        <h2 class="text-4xl font-bold">Challenges</h2>
+        <div class="container xl:max-w-90%">
+            <div class="flex overflow-x-auto snap-x snap-mandatory 2x5:justify-center">
+                <app-challenges [text]="{
+                challenge: 'Challenge 1',
+                name: 'Empowering Learning and Development',
+                description: 'Design AI-powered platforms to make learning more engaging and personalized',
+                example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+                }">
+        
+                </app-challenges>
+                <app-challenges [text]="{
+                challenge: 'Challenge 2',
+                name: 'Empowering Learning and Development',
+                description: 'Design AI-powered platforms to make learning more engaging and personalized',
+                example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+                }">
+                </app-challenges>
+        
+                <app-challenges [text]="{
+                challenge: 'Challenge 3',
+                name: 'Empowering Learning and Development',
+                description: 'Design AI-powered platforms to make learning more engaging and personalized',
+                example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+                }">
+                </app-challenges>
+        
+                <app-challenges [text]="{
+                challenge: 'Challenge 4',
+                name: 'Empowering Learning and Development',
+                description: 'Design AI-powered platforms to make learning more engaging and personalized',
+                example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+                }">
+                </app-challenges>
+        
+                <app-challenges [text]="{
+                challenge: 'Challenge 5',
+                name: 'Empowering Learning and Development',
+                description: 'Design AI-powered platforms to make learning more engaging and personalized',
+                example: 'Examples: Adaptive learning tools, AI tutors, and real-time feedback systems.'
+                }">
+                </app-challenges>
+    
+            </div>
         </div>
-  
+    
+    </section>
+
+    <!-- Judging Criteria -->
+    <section class="bg-zinc-100">
+        <h2 class="text-4xl font-bold">Participant Guidelines</h2>
         <div>
-            <h3 class="text-2xl font-bold">Collaboration</h3>
-            <p>Work in teams of up to 4 members to brainstorm, design, and build your solution.</p>
+            <div>
+                <h3 class="text-2xl font-bold">Flexibility</h3>
+                <p>We are encouraging participants to use any technologies or services they are comfortable with, adjusting as necessary to align with their solution's needs.</p>
+            </div>
+    
+            <div>
+                <h3 class="text-2xl font-bold">Collaboration</h3>
+                <p>Work in teams of up to 4 members to brainstorm, design, and build your solution.</p>
+            </div>
+    
+            <div>
+                <h3 class="text-2xl font-bold">Support</h3>
+                <p>Mentors and resources will be available throughout the event to guide participants.</p>
+            </div>
         </div>
-  
-        <div>
-            <h3 class="text-2xl font-bold">Support</h3>
-            <p>Mentors and resources will be available throughout the event to guide participants.</p>
+    </section>
+    
+    <section class="bg-white flex flex-col items-center">
+        <app-expandable
+            [title]="'Option 1: Architecture Diagram Challenge'"
+            [description]="'Design a detailed architecture diagram for a solution to your chosen challenge. Focus on:'"
+            [points]="[
+            { title: 'Key Challenges', details: 'Identify and address critical issues within the topic.' },
+            { title: 'Services and Tools', details: 'Choose technologies that align with your solution\'s goals.' },
+            { title: 'System Flow', details: 'Clearly illustrate how data moves within the system.' },
+            { title: 'Scalability and Security', details: 'Ensure the design is secure, reliable, and can grow as needed.' }
+            ]"
+            [expandableTitle]="'What to Submit - Presentation Deck Requirements:'"
+            [expandableContent]="[
+            { title: 'Title Slide', details: ['Project Name and Team Members'] },
+            { title: 'Problem Statement', details: ['Clearly define the problem within your chosen category and its significance'] },
+            { title: 'Comprehensive Diagram', details: ['Showcase a detailed architecture diagram with clear annotations explaining components, data flow, and system interactions'] },
+            { title: 'Design Rationale', details: ['Provide a written explanation of your design choices, how they address the identified challenges, and why specific tools, frameworks, or services were selected'] },
+            { title: 'Scalability, Security, and Reliability', details: ['Highlight how your architecture ensures scalability, maintains security, and ensures reliability for the proposed solution'] },
+            { title: 'Innovation', details: ['Emphasize any innovative features or approaches used in your design'] },
+            { title: 'Video', details: ['Create a video (not exceeding 2 minutes) to walk through your presentation and visually explain your architecture'] }
+            ]"
+    ></app-expandable>
+        <app-expandable
+            [title]="'Option 2: Platform Development Challenge'"
+            [description]="'Develop a functional platform that addresses challenges in your chosen topic. Focus on:'"
+            [points]="[
+                { title: 'Functionality', details: 'Build a solution that works effectively for your target audience.' },
+                { title: 'User Experience', details: 'Prioritize a clean, intuitive design for users.' },
+                { title: 'Impact', details: 'Ensure the platform contributes positively to solving the problem.' }
+            ]"
+            [expandableTitle]="'What to Submit - Presentation Deck Requirements:'"
+            [expandableContent]="[
+                { title: 'GitHub Repository', details: ['Well-organized and documented code implementing your platform.'] },
+                { title: 'README File', details: ['Instructions for setting up and running your platform.', 'A description of the platform\'s purpose and key features.'] },
+                { title: 'System Overview', details: ['Highlight key components of the platform (e.g., backend, frontend, AI models, APIs).'] },
+                { title: 'Scalability and Security', details: ['Discuss how the platform ensures scalability and security, including any frameworks or best practices followed.'] },
+                { title: 'Presentation (Optional)', details: ['Title Slide: Project Name and Team Members.', 'Inspiration: What inspired your project and how it relates to the chosen category?', 'Coding Journey: Briefly discuss your development process, challenges faced, and how they were overcome.', 'Learnings: Highlight key takeaways from your experience.'] },
+                { title: 'Demo Video', details: ['Include a video (not exceeding 5 minutes) showcasing a working model of your platform, demonstrating its features and functionality.'] }
+            ]">
+        </app-expandable>
+    </section>
+    
+    <!-- Prizes -->
+    <section class="bg-zinc-100">
+        <div class="flex flex-col items-center text-2xl">
+            <h2 class="w-full py-2 text-5xl font-bold leading-tight text-center">
+            Prizes
+            </h2>
+            <div class="px-6 py-4 max-w-prose">
+            <ul class="">
+                <li><strong>First Place:</strong> Microsoft office tour referral/Dayforce interview (maybe), HackHive 2025 hoodie.</li>
+                <li><strong>Second Place:</strong> HackHive 2025 hoodie.</li>
+                <li><strong>Third Place:</strong> HackHive 2025 hoodie.</li>
+            </ul>
+            </div>
         </div>
-    </div>
-  </section>
-  
-<section class="bg-white flex flex-col items-center">
-    <app-expandable
-        [title]="'Option 1: Architecture Diagram Challenge'"
-        [description]="'Design a detailed architecture diagram for a solution to your chosen challenge. Focus on:'"
-        [points]="[
-        { title: 'Key Challenges', details: 'Identify and address critical issues within the topic.' },
-        { title: 'Services and Tools', details: 'Choose technologies that align with your solution\'s goals.' },
-        { title: 'System Flow', details: 'Clearly illustrate how data moves within the system.' },
-        { title: 'Scalability and Security', details: 'Ensure the design is secure, reliable, and can grow as needed.' }
-        ]"
-        [expandableTitle]="'What to Submit - Presentation Deck Requirements:'"
-        [expandableContent]="[
-        { title: 'Title Slide', details: ['Project Name and Team Members'] },
-        { title: 'Problem Statement', details: ['Clearly define the problem within your chosen category and its significance'] },
-        { title: 'Comprehensive Diagram', details: ['Showcase a detailed architecture diagram with clear annotations explaining components, data flow, and system interactions'] },
-        { title: 'Design Rationale', details: ['Provide a written explanation of your design choices, how they address the identified challenges, and why specific tools, frameworks, or services were selected'] },
-        { title: 'Scalability, Security, and Reliability', details: ['Highlight how your architecture ensures scalability, maintains security, and ensures reliability for the proposed solution'] },
-        { title: 'Innovation', details: ['Emphasize any innovative features or approaches used in your design'] },
-        { title: 'Video', details: ['Create a video (not exceeding 2 minutes) to walk through your presentation and visually explain your architecture'] }
-        ]"
-  ></app-expandable>
-    <app-expandable
-        [title]="'Option 2: Platform Development Challenge'"
-        [description]="'Develop a functional platform that addresses challenges in your chosen topic. Focus on:'"
-        [points]="[
-            { title: 'Functionality', details: 'Build a solution that works effectively for your target audience.' },
-            { title: 'User Experience', details: 'Prioritize a clean, intuitive design for users.' },
-            { title: 'Impact', details: 'Ensure the platform contributes positively to solving the problem.' }
-        ]"
-        [expandableTitle]="'What to Submit - Presentation Deck Requirements:'"
-        [expandableContent]="[
-            { title: 'GitHub Repository', details: ['Well-organized and documented code implementing your platform.'] },
-            { title: 'README File', details: ['Instructions for setting up and running your platform.', 'A description of the platform\'s purpose and key features.'] },
-            { title: 'System Overview', details: ['Highlight key components of the platform (e.g., backend, frontend, AI models, APIs).'] },
-            { title: 'Scalability and Security', details: ['Discuss how the platform ensures scalability and security, including any frameworks or best practices followed.'] },
-            { title: 'Presentation (Optional)', details: ['Title Slide: Project Name and Team Members.', 'Inspiration: What inspired your project and how it relates to the chosen category?', 'Coding Journey: Briefly discuss your development process, challenges faced, and how they were overcome.', 'Learnings: Highlight key takeaways from your experience.'] },
-            { title: 'Demo Video', details: ['Include a video (not exceeding 5 minutes) showcasing a working model of your platform, demonstrating its features and functionality.'] }
-        ]">
-    </app-expandable>
+    </section>
+    
+
+    <app-footer></app-footer>
 </section>
-  
-<!-- Prizes -->
-<section class="bg-zinc-100">
-    <div class="flex flex-col items-center text-2xl">
-        <h2 class="w-full py-2 text-5xl font-bold leading-tight text-center">
-        Prizes
-        </h2>
-        <div class="px-6 py-4 max-w-prose">
-        <ul class="">
-            <li><strong>First Place:</strong> Microsoft office tour referral/Dayforce interview (maybe), HackHive 2025 hoodie.</li>
-            <li><strong>Second Place:</strong> HackHive 2025 hoodie.</li>
-            <li><strong>Third Place:</strong> HackHive 2025 hoodie.</li>
-        </ul>
-        </div>
-    </div>
-</section>
-  
-
-<app-footer></app-footer>
-
-
-
