@@ -1,0 +1,43 @@
+.carousel {
+    position: relative;
+    width: 100%; /* The width of the carousel container */
+    max-width: 90%; /* Optional: Set max-width to control the size of the carousel */
+    margin: 0 auto;
+    overflow: hidden; /* Ensures only one slide is visible at a time */
+}
+
+.slides-container {
+    display: flex; /* Flexbox ensures the slides are placed next to each other */
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+    width: 100%; /* Ensure the container takes the full width */
+}
+
+.slide {
+    flex: 0 0 100%; /* Each slide occupies 100% of the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    border: none;
+    font-size: 100px;
+    cursor: pointer;
+    z-index: 10;
+    padding: -50px;
+}
+
+.nav-button.left {
+    left: 10px;
+  }
+  
+  .nav-button.right {
+    right: 10px;
+  }
+
+

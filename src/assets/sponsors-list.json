@@ -1,17 +1,17 @@
 [
     {
         "name": "Kyndryl",
-        "logo": "assets/images/kyndryl_logo.png",
+        "logo": "assets/images/Kyndryl_Logo.png",
         "url": "https://www.sponsor1.com",
         "tier": "platinum", 
-        "description": "Dewription "
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac purus porta, dignissim felis sit amet, sodales diam. Curabitur iaculis enim quis eleifend tincidunt. Vestibulum non nunc mauris. Donec facilisis iaculis gravida. Cras mattis metus vitae fringilla ultricies. Phasellus fermentum lacinia tincidunt. Pellentesque dictum ut quam quis varius. Proin placerat vitae neque eu mollis. Sed eget fringilla massa. Vivamus gravida pellentesque tortor. Donec id euismod orci. Nullam sit amet elit id nisl volutpat consequat. Sed cursus, nunc suscipit hendrerit consectetur, ex magna condimentum magna, quis condimentum nunc leo ac arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam viverra rhoncus ipsum, nec hendrerit neque imperdiet a."
     },
     {
         "name": "Dayforce",
         "logo": "assets/images/dayforce_logo.png",
         "url": "https://www.sponsor2.com",
         "tier": "platinum",
-        "description": "Description "
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac purus porta, dignissim felis sit amet, sodales diam. Curabitur iaculis enim quis eleifend tincidunt. Vestibulum non nunc mauris. Donec facilisis iaculis gravida. Cras mattis metus vitae fringilla ultricies. Phasellus fermentum lacinia tincidunt. Pellentesque dictum ut quam quis varius. Proin placerat vitae neque eu mollis. Sed eget fringilla massa. Vivamus gravida pellentesque tortor. Donec id euismod orci. Nullam sit amet elit id nisl volutpat consequat. Sed cursus, nunc suscipit hendrerit consectetur, ex magna condimentum magna, quis condimentum nunc leo ac arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam viverra rhoncus ipsum, nec hendrerit neque imperdiet a."
     },
     {
         "name": "Brilliant Catalyst",

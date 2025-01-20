@@ -1,0 +1,15 @@
+<div class="carousel">
+    <!-- Navigation Buttons -->
+    <button class="nav-button left" (click)="prev()">&#8249;</button>
+    <button class="nav-button right" (click)="next()">&#8250;</button>
+  
+    <!-- Slide Container -->
+    <div class="slides-container" [style.transform]="'translateX(' + (-currentSlide * 100) + '%)'">
+      <ng-container *ngFor="let slide of slides; let i = index">
+        <div class="slide">
+          <ng-container *ngTemplateOutlet="slideTemplate; context: { $implicit: slide }"></ng-container>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  

@@ -1,47 +1,25 @@
-.sponsors {
-  text-align: center;
-  padding: 2rem;
-  background-color: #2e0249;
-  color: #ffeb3b;
-  font-family: Arial, sans-serif;
+.sponsor-section {
+
+  padding: 20px 50px;
+
 }
 
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  text-shadow: 2px 2px #000;
+.sponsor-section h1{
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+
 }
 
-.tier {
-  margin-bottom: 3rem;
-}
-
-.tier h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #ffd700; /* Gold color for tier headings */
-}
-
-.logos {
+.sponsor-section .cards {
+  
+  padding-top: 20px;
   display: flex;
+  flex-direction: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+
 }
 
-.logos img {
-  max-width: 180px;
-  height: auto;
-  /*border: 2px solid #ffeb3b; !* Yellow border *!*/
-  /*padding: 1rem;*/
-  /*background-color: #4a006e; !* Darker purple for contrast *!*/
-  /*border-radius: 10px;*/
-  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);*/
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.logos img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(255, 235, 59, 0.7); /* Yellow glow on hover */
-}
+

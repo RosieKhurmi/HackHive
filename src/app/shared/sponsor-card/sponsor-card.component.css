@@ -1,8 +1,41 @@
-.top {
-
+.sponsor-card.top{
+    
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    text-align: left;
+    padding: 20px;
 
 }
-  
+
+.sponsor-card.top img{
+    max-width: 300px;
+    object-fit: contain;
+    margin-right: 16px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sponsor-card.other {
+    display: inline-block;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin: 10px;
+    width: auto;
+    overflow: hidden;
+}
+
+.sponsor-card.other:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-5px); 
+}
+
+.sponsor-card.other img {
+    max-height: 120px; 
+    object-fit: cover;
+}
+
+
+
+

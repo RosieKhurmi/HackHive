@@ -4,16 +4,18 @@ import sponsorsList from '../../../assets/sponsors-list.json';
 import { MenuComponent } from '../../core/menu/menu.component';
 import { SponsorCardComponent } from '../../shared/sponsor-card/sponsor-card.component';
 import { FooterComponent } from '../../core/footer/footer.component';
+import { CarouselComponent } from '../../shared/carousel/carousel.component';
 
 @Component({
   selector: 'app-sponsors',
   templateUrl: './sponsors.component.html',
   standalone: true,
   imports: [
-    MenuComponent, 
-    SponsorCardComponent, 
-    FooterComponent, 
-    CommonModule
+    MenuComponent,
+    SponsorCardComponent,
+    FooterComponent,
+    CommonModule,
+    CarouselComponent
   ],
   styleUrls: ['./sponsors.component.css']
 })

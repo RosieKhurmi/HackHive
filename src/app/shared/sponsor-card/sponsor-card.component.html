@@ -1,13 +1,10 @@
 <div class="sponsor-card" 
-    [ngClass]="{
+    [ngClass]="{ 
     'top': tier() === 'platinum',
-    'other': tier() === 'silver' 
-        || tier() === 'bronze' 
-        || tier() === 'gold'
-        || tier() === 'collaborator'
+    'other': tier() !== 'platinum'
     }">
 
-    <img style="height: 50px; background-color: aliceblue;"
+    <img
         [src]="image().src" 
         [alt]="image().alt" 
     />
