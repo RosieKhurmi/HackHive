@@ -1,4 +1,4 @@
-<section class="bg-[var(--background)] h-screen">
+<section class="bg-gradient-to-b from-yellow-500 via-amber-400 to-amber-500 dark:from-violet-800 dark:via-purple-900 dark:to-violet-900 h-screen">
   <app-menu></app-menu>
 
   <!-- Platinum Sponsors    -->
@@ -19,7 +19,7 @@
   <!-- Gold Sponsors -->
   <section>
       <div *ngIf="gold.length > 0">
-          <h1 class="text-6xl font-bold text-amber-200">Gold Sponsors</h1>
+          <h1 class="text-6xl font-bold text-amber-400">Gold Sponsors</h1>
           <div *ngFor="let s of gold">
             <app-sponsor-card 
                 [image]="{src: s.logo, alt: s.name}"
@@ -33,7 +33,7 @@
   <!-- Silver Sponsors -->
   <section class="justify-center">
       <div *ngIf="silver.length > 0">
-          <h1 class="text-5xl font-bold text-slate-200">Silver Sponsors</h1>
+          <h1 class="text-5xl font-bold text-slate-400">Silver Sponsors</h1>
           <div *ngFor="let s of silver">
             <app-sponsor-card 
                 [image]="{src: s.logo, alt: s.name}"
