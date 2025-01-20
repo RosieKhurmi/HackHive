@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-    --background: #f4f4f5;
-    --background-secondary: #ffffff;
-    --foreground: #3e3e41;
-    --foreground-hover: #d97706;
-    --foreground-secondary: #4d4d53;
-    --foreground-secondary-hover: #b45309;
+    --background: #43287518;
+    --background-secondary: #43287518;
+    --foreground: #f0f0f7;
+    --foreground-hover: #ffe600;
+    --foreground-secondary: #18181b;
+    --foreground-secondary-hover: #ffe600;
   }
   
   @media (prefers-color-scheme: dark) {
