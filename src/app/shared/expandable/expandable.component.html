@@ -16,9 +16,9 @@
       <div class="p-6">
         <h4 class="font-bold mb-4">{{ expandableTitle }}</h4>
         <ol class="list-decimal ml-6 space-y-4">
-          <li *ngFor="let item of expandableContent">
+          <li *ngFor="let item of expandableContent" class="list-none">
             <strong>{{ item.title }}:</strong>
-            <ul class="list-disc ml-6 mt-2">
+            <ul class="list-disc ml-6 mt-2 list-none">
               <li *ngFor="let subItem of item.details">{{ subItem }}</li>
             </ul>
           </li>

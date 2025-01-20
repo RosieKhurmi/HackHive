@@ -14,7 +14,11 @@
           <a href="https://maps.app.goo.gl/ze14Bemr7Akhz1gY9?g_st=com.google.maps.preview.copy" target="_blank">
             <span class="text-gray-700">Ontario Tech University</span>
           </a>
-            <span class="text-gray-500">2000 Simcoe St N, Oshawa, ON L1G 0C5</span>
+          <!-- Embed -->
+          <a href="https://maps.app.goo.gl/ze14Bemr7Akhz1gY9?g_st=com.google.maps.preview.copy" target="_blank">
+            <span class="text-gray-700">Ontario Tech University</span>
+          </a>
+          <span class="text-gray-500">2000 Simcoe St N, Oshawa, ON L1G 0C5</span>
         </div>
     </div>
     <div>
@@ -34,21 +38,33 @@
         </div>
     </div>
 
-    <app-expandable
-        [title]="'Day 1: Opening Ceremony'"
-        [description]="'Kick off the event with an inspiring keynote and networking opportunities.'"
-        [points]="[
-        { title: '9:00 AM', details: 'Registration and Welcome Breakfast.' },
-        { title: '10:00 AM', details: 'Keynote Speech by Jane Doe.' },
-        { title: '11:30 AM', details: 'Panel Discussion: The Future of Tech.' }
-        ]"
+    <div>
+      <h2>Schedule</h2>
+      <app-expandable 
+        [title]="'Day One'"
+        [description]="'Feburary 7 | 6:30 to 10pm'"
         [expandableTitle]="'Schedule'"
         [expandableContent]="[
-        { title: 'Dress Code', details: ['Business Casual.'] },
-        { title: 'Location', details: ['Main Hall, Tech Conference Center.'] }
-        ]"
-    >
-    </app-expandable>
+            { title: '6:30 to 7pm', details: ['Opening Ceremonies'] },
+        ]">
+      </app-expandable>
+      <app-expandable 
+        [title]="'Day Two'"
+        [description]="'Feburary 7 | 6:30 to 10pm'"
+        [expandableTitle]="'Schedule'"
+        [expandableContent]="[
+            { title: '6:30 to 7pm', details: ['Opening Ceremonies'] },
+        ]">
+      </app-expandable>
+      <app-expandable 
+        [title]="'Day Three'"
+        [description]="'Feburary 7 | 6:30 to 10pm'"
+        [expandableTitle]="'Schedule'"
+        [expandableContent]="[
+            { title: '6:30 to 7pm', details: ['Opening Ceremonies'] },
+        ]">
+      </app-expandable>
+    </div>
 
 </div>
 

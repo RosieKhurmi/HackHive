@@ -1,18 +1,29 @@
 .menu-bar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0; /* Add some padding for spacing */
-    background-color: beige;
-    border-bottom: #000;
+    justify-content: space-between; /* Distributes the sections */
+    align-items: center; /* Aligns items vertically */
+    width: 100%; /* Full width */
+    padding: 0 20px; /* Adds horizontal padding */
 }
 
 .logo {
-    flex: 0 0 auto; /* Ensures the logo stays on the left */
-    padding-left: 20px;
+    flex: 0 0 auto; /* Prevent the logo from shrinking */
 }
 
-.links ul {
+.navigation {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    gap: 2rem; /* Add space between the links */
+}
+
+.socials {
+    flex: 0 0 auto; /* Prevent the socials from shrinking */
+    display: flex;
+    gap: 1rem; /* Space between social icons */
+}
+
+
+.socials ul {
     display: flex;
     list-style: none;
     margin: 0;
@@ -20,17 +31,17 @@
     overflow: hidden; /* Prevent overflow */
 }
 
-.links ul li {
+.socials ul li {
     margin-left: 0; /* Remove spacing between menu items */
 }
 
-.links li a p svg {
+.socials li a p svg {
     display: inline-block;
     width: 60px;
     height: 60px;
     transition: fill 0.3s ease-in-out; /* Smooth transition */
 }
 
-.links li a:hover p svg {
+.socials li a:hover p svg {
     transition: fill 0.3s ease-in-out; /* Smooth transition */
 }
