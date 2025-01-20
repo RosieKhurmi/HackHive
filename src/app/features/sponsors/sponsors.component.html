@@ -1,75 +1,77 @@
-<app-menu></app-menu>
+<section class="bg-[var(--background)] h-screen">
+  <app-menu></app-menu>
 
-<!-- Platinum Sponsors    -->
-<section>
-    <div *ngIf="platinum.length > 0">
-        <h1>Platinum Sponsors</h1>
-        <div *ngFor="let s of platinum">
-          <app-sponsor-card 
-              [image]="{src: s.logo, alt: s.name}"
-              [tier]="s.tier"
-              [description]="s.description"
-              [ngClass]="s.tier">
-          </app-sponsor-card>
+  <!-- Platinum Sponsors    -->
+  <section>
+      <div *ngIf="platinum.length > 0">
+          <h1 class="text-6xl font-bold text-slate-200">Platinum Sponsors</h1>
+          <div *ngFor="let s of platinum">
+            <app-sponsor-card 
+                [image]="{src: s.logo, alt: s.name}"
+                [tier]="s.tier"
+                [description]="s.description"
+                [ngClass]="s.tier">
+            </app-sponsor-card>
+          </div>
         </div>
-      </div>
-</section>
+  </section>
 
-<!-- Gold Sponsors -->
-<section>
-    <div *ngIf="gold.length > 0">
-        <h1>Gold Sponsors</h1>
-        <div *ngFor="let s of gold">
-          <app-sponsor-card 
-              [image]="{src: s.logo, alt: s.name}"
-              [tier]="s.tier"
-              [ngClass]="s.tier">
-          </app-sponsor-card>
+  <!-- Gold Sponsors -->
+  <section>
+      <div *ngIf="gold.length > 0">
+          <h1 class="text-6xl font-bold text-amber-200">Gold Sponsors</h1>
+          <div *ngFor="let s of gold">
+            <app-sponsor-card 
+                [image]="{src: s.logo, alt: s.name}"
+                [tier]="s.tier"
+                [ngClass]="s.tier">
+            </app-sponsor-card>
+          </div>
         </div>
-      </div>
-</section>
+  </section>
 
-<!-- Silver Sponsors -->
-<section>
-    <div *ngIf="silver.length > 0">
-        <h1>Silver Sponsors</h1>
-        <div *ngFor="let s of silver">
-          <app-sponsor-card 
-              [image]="{src: s.logo, alt: s.name}"
-              [tier]="s.tier"
-              [description]="s.description"
-              [ngClass]="s.tier">
-          </app-sponsor-card>
+  <!-- Silver Sponsors -->
+  <section class="justify-center">
+      <div *ngIf="silver.length > 0">
+          <h1 class="text-5xl font-bold text-slate-200">Silver Sponsors</h1>
+          <div *ngFor="let s of silver">
+            <app-sponsor-card 
+                [image]="{src: s.logo, alt: s.name}"
+                [tier]="s.tier"
+                [description]="s.description"
+                [ngClass]="s.tier">
+            </app-sponsor-card>
+          </div>
         </div>
-      </div>
-</section>
+  </section>
 
-<!-- Bronze Sponsors -->
-<section>
-    <div *ngIf="bronze.length > 0">
-        <h1>Bronze Sponsors</h1>
-        <div *ngFor="let s of bronze">
-          <app-sponsor-card 
-              [image]="{src: s.logo, alt: s.name}"
-              [tier]="s.tier"
-              [ngClass]="s.tier">
-          </app-sponsor-card>
+  <!-- Bronze Sponsors -->
+  <section>
+      <div *ngIf="bronze.length > 0">
+          <h1 class="text-4xl font-bold text-amber-800">Bronze Sponsors</h1>
+          <div *ngFor="let s of bronze">
+            <app-sponsor-card 
+                [image]="{src: s.logo, alt: s.name}"
+                [tier]="s.tier"
+                [ngClass]="s.tier">
+            </app-sponsor-card>
+          </div>
         </div>
-      </div>
-</section>
+  </section>
 
-<!-- Collaborator Sponsors -->
-<section>
-    <div *ngIf="collaborator.length > 0">
-        <h1>Collaborator Sponsors</h1>
-        <div *ngFor="let s of collaborator">
-          <app-sponsor-card 
-              [image]="{src: s.logo, alt: s.name}"
-              [tier]="s.tier"
-              [ngClass]="s.tier">
-          </app-sponsor-card>
+  <!-- Collaborator Sponsors -->
+  <section>
+      <div *ngIf="collaborator.length > 0">
+          <h1>Collaborator Sponsors</h1>
+          <div *ngFor="let s of collaborator">
+            <app-sponsor-card 
+                [image]="{src: s.logo, alt: s.name}"
+                [tier]="s.tier"
+                [ngClass]="s.tier">
+            </app-sponsor-card>
+          </div>
         </div>
-      </div>
-</section>
+  </section>
 
-<app-footer></app-footer>
+  <app-footer></app-footer>
+</section>
