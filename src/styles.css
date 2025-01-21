@@ -3,22 +3,23 @@
 @tailwind utilities;
 
 :root {
-    --background: #ffca56;
+    /* --background: #ffca56;
     --background-secondary: #6d6d6d;
     --foreground: #e9f2ff;
     --foreground-hover: #a56fd1;
     --foreground-secondary: #ffffff;
-    --foreground-secondary-hover:#a56fd1;
+    --foreground-secondary-hover:#a56fd1; */
+    --background: #f4f4f5;
   }
   
   @media (prefers-color-scheme: dark) {
     :root {
-      --background: #1d1622;
+      /* --background: #1d1622;
       --background-secondary: #1d1622;
       --foreground: #ffffff;
       --foreground-hover: #e9c2f5;
       --foreground-secondary: #e7e7fa;
-      --foreground-secondary-hover: #7946f0;
+      --foreground-secondary-hover: #7946f0; */
     }
 }
   

@@ -1,18 +1,22 @@
 
+<!-- <div class="bg-gradient-to-b from-purple-700 from-15% via-yellow-500 via-35% to-purple-700 dark:from-violet-700 dark:via-violet-800 dark:to-violet-900"></div> 
+bg-purple-300 hover:bg-purple-100 dark:bg-violet-800 dark:hover:bg-violet-500 dark:text-white font-semibold p-3 mt-6 rounded-3xl transition duration-300 
+text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--background)]
+-->
 
-<body class="bg-gradient-to-b from-purple-700 from 15% via-yellow-500 via-35% to-purple-700 dark:from-violet-700 dark:via-violet-800 dark:to-violet-900">
+<body class="bg-gradient-to-b purple-200 via-purple-400  bg-purple-400">
   <app-menu></app-menu>
   
-  <!--Hero-->
+  <!--Hero Fix -->
   <div class="text-[var(--foreground-secondary)]">
-      <div class="container mx-auto flex flex-wrap flex-col md:flex-row justify-center items-center">
+      <div class="container flex flex-wrap flex-row md:flex-row justify-center items-center">
           <div class="flex flex-col w-full md:w-2/5 justify-center items-start">
               <p class="uppercase text-2xl w-full">OTU CS Club presents...</p>
               <h1 class="text-6xl font-bold mb-4 gradient-text">HackHive 2025</h1>
               <p class="text-5xl">AI for a Better Tomorrow</p>
               <div style="display: flex; gap: 20px;">
-                <app-button label="Explore" class="bg-purple-300 hover:bg-purple-100 dark:bg-violet-800 dark:hover:bg-violet-500 dark:text-white font-semibold p-3 mt-6 rounded-3xl transition duration-300" (onClick)="nav('/about')"></app-button>
-                <app-button label="Register Now" class="bg-purple-300 hover:bg-purple-100 dark:bg-violet-800 dark:hover:bg-violet-500 dark:text-white font-semibold p-3 mt-6 rounded-3xl transition duration-300" (onClick)="nav('/register')"></app-button>
+                <app-button label="Explore" (onClick)="nav('/about')"></app-button>
+                <app-button label="Register Now" (onClick)="nav('/register')"></app-button>
               </div>
             </div>
           <div class="hidden md:flex w-full md:w-3/5">
@@ -22,9 +26,9 @@
   </div>
   
   <div class="relative">
-      <svg viewBox="0 0 1428 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg viewBox="0 0 1428 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g transform="translate(-2.000000, 44.000000)" class="fill-purple-600 dark:fill-amber-900 stroke-white dark:stroke-indigo-100" fill-rule="nonzero">
+          <g transform="translate(-2.000000, 44.000000)" class="fill-violet-600 dark:fill-amber-900 stroke-white dark:stroke-indigo-100" fill-rule="nonzero">
           <path 
             stroke-width="1"
             d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
@@ -46,9 +50,16 @@
       </svg>
   </div>
 
+
+<!--Countdown ToDo -->
+<section class="h-[600px] bg-[var(--background)] flex flex-col justify-center items-center @media (min-width: 768px) md:h-[400px]">
+  <h1 class="text-5xl font-bold mb-4 gradient-text flex justify-center pb-6">Get Hacking In...</h1>
+  <app-countdown></app-countdown>
+</section>
+
 <!-- General Description -->
-<section class="text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--background)] dark:border-zinc-900 py-8">
-  <div class="container max-w-5xl mx-auto m-8">
+<section class="bg-[var(--background)]">
+  <div class="container max-w-5xl mx-auto p-8">
 
     <p class="w-full my-2 text-5xl font-bold leading-tight text-[var(--foreground)]">
       What's HackHive?
@@ -87,26 +98,21 @@
 </section>
 
 
-<!--Countdown-->
-<section class="border-b border-transparent dark:bg-[var(--background-secondary)] dark:border-zinc-800 py-8">
-  <app-countdown></app-countdown>
-</section>
-
-
 <!-- Itinerary -->
-<section class="border-b border-transparent dark:bg-[var(--background)] dark:border-zinc-800 py-8">
-
+<section class="dark:bg-[var(--background)] p-8">
   <app-itinerary></app-itinerary>
-
-
 </section>
 
 <!-- Contact -->
 <section class="dark:bg-[var(--background)] py-8 flex justify-center">
-  <div class="items-center w-full max-w-screen-lg">
+  <div class="bg-white max-w-4xl w-full p-8 rounded-lg shadow-lg">
+    <h1 class="text-4xl font-bold mb-6 gradient-text text-center">Contact Us</h1>
+    
+    <!-- Contact form component -->
     <app-contact></app-contact>
   </div>
 </section>
+
 
 <!-- Footer  -->
 <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
