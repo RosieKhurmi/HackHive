@@ -43,3 +43,11 @@
   letter-spacing: 1px;
   opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+
+  .hex-grid.countdown {
+    flex-wrap: wrap;
+  }
+  
+}
