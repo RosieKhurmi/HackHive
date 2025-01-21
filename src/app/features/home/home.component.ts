@@ -6,7 +6,7 @@ import { FooterComponent } from "../../core/footer/footer.component";
 import { ButtonComponent } from "../../core/button/button.component";
 import { ContactComponent } from "../../shared/contact/contact.component";
 import { ChallengesComponent } from '../../shared/challenges/challenges.component';
-import { ItineraryComponent } from '../../shared/itinerary/itinerary.component';
+import { ExpandableComponent } from '../../shared/expandable/expandable.component';
 import {CountdownComponent} from '../../shared/countdown/countdown.component';
 import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
 
@@ -18,8 +18,8 @@ import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
     ButtonComponent,
     ChallengesComponent,
     ContactComponent,
-    ItineraryComponent,
-    CountdownComponent
+    CountdownComponent,
+    ExpandableComponent
   ],
   templateUrl: './home.component.html',
   standalone: true,
@@ -27,7 +27,9 @@ import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
   encapsulation: ViewEncapsulation.None // ! This is necessary to apply styles to the dynamic SVGs
 })
 export class HomeComponent{
+  
   computerMan;
+
   constructor(private sanitizer: DomSanitizer, private router: Router) {
     this.computerMan = this.sanitizer.bypassSecurityTrustHtml(computerMan);
   }
