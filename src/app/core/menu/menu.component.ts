@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, HostListener } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import linkedin from '../../../assets/icons/linkedin.svg';
@@ -39,6 +39,9 @@ export class MenuComponent {
   x;
   email;
 
+  isScrolling: boolean = false;
+  isResponsiveMenuOpen: boolean = false;
+
   constructor(private sanitizer: DomSanitizer) {
     // SVGs are dynamically loaded and Angular's security
     // would otherwise block them as potentially unsafe content
@@ -46,5 +49,17 @@ export class MenuComponent {
     this.instagram = this.sanitizer.bypassSecurityTrustHtml(instagram);
     this.x = this.sanitizer.bypassSecurityTrustHtml(x);
     this.email = this.sanitizer.bypassSecurityTrustHtml(email);
+
   }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    this.isScrolling = window.scrollY > 0;
+  }
+
+  toggleResponsiveMenu(): void {
+    this.isResponsiveMenuOpen = !this.isResponsiveMenuOpen;
+  }
+
+
 }

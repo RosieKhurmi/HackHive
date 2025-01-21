@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../../core/button/button.component';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
-  imports: [ButtonComponent],
+  imports: [],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })

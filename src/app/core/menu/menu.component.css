@@ -1,25 +1,40 @@
 .menu-bar {
+    background-color: transparent;
     display: flex;
-    justify-content: space-between; /* Distributes the sections */
-    align-items: center; /* Aligns items vertically */
-    width: 100%; /* Full width */
-    padding: 0 20px; /* Adds horizontal padding */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Add background color when scrolled */
+.menu-bar.scrolled {
+    background-color: var(--background);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
 }
 
 .logo {
-    flex: 0 0 auto; /* Prevent the logo from shrinking */
+    flex: 0 0 auto; 
 }
 
 .navigation {
     display: flex;
-    justify-content: center; /* Center the navigation links */
-    gap: 2rem; /* Add space between the links */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-grow: 1; 
 }
 
 .socials {
-    flex: 0 0 auto; /* Prevent the socials from shrinking */
+    flex: 0 0 auto;
     display: flex;
-    gap: 1rem; /* Space between social icons */
+    gap: 1rem; 
 }
 
 
@@ -28,20 +43,65 @@
     list-style: none;
     margin: 0;
     padding-right: 20px;
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden; 
 }
 
 .socials ul li {
-    margin-left: 0; /* Remove spacing between menu items */
+    margin-left: 0; 
 }
 
 .socials li a p svg {
     display: inline-block;
     width: 60px;
     height: 60px;
-    transition: fill 0.3s ease-in-out; /* Smooth transition */
+    transition: fill 0.3s ease-in-out; 
 }
 
-.socials li a:hover p svg {
-    transition: fill 0.3s ease-in-out; /* Smooth transition */
+.menu-toggle {
+    display: none; /* Hide toggle button by default */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1023px) {
+
+    .socials {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+        position: fixed; /* Fixed position for full-screen */
+        top: 0; /* Start at the top of the viewport */
+        left: 0; /* Stretch to the left */
+        width: 100%; /* Take up the entire width */
+        height: 100vh; /* Full viewport height */
+        background-color: var(--primary); /* Full background color */
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        padding: 0; /* Remove padding */
+        z-index: 10; /* Ensure it's above other content */
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%); /* Initially hidden (off-screen) */
+        background-color: var(--background);
+    }
+
+    /* Show the menu items when the menu button is clicked */
+    .navigation.open {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+        z-index: 20; /* Ensure it's above other content */
+    }
+
+    
+
 }

@@ -2,13 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent } from "../../core/button/button.component";
 import  {environment } from '../../../enviroments/environment.uas';
 
 @Component({
   selector: 'app-contact',
   imports: [
-    ButtonComponent,
     ReactiveFormsModule,
     CommonModule,
   ],

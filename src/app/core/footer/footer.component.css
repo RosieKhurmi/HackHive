@@ -2,15 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
-  /* Relative positioning */
+  padding: 20px 0;
   width: 100%;
-  /* Ensure it spans the full width */
   bottom: 0;
   /* Aligns the footer to the bottom */
   left: 0;
   /* Aligns the footer to the left */
-  background-color: #f8f9fa;
   color: #212529;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -41,7 +38,17 @@
   transition: color 0.5s; /* Smooth color transition */
 }
 
-.socials ul li a:hover {
-  color: #007bff; /* Change text color on hover */
-  transition: color 0.5s; /* Smooth color transition */
+/* .socials ul li a:hover {
+  color: var(--background); 
+  transition: color 0.5s; 
+} */
+
+@media (max-width: 768px)  {
+  
+  .socials {
+    display: none;
+  }
+
 }
+
+
