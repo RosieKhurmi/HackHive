@@ -89,9 +89,12 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/add-to-calendar-button/assets/css/atcb.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/add-to-calendar-button"
+            ]
           }
         }
       }

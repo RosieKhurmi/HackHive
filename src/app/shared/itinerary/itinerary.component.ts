@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { ExpandableComponent } from '../expandable/expandable.component';
+import 'add-to-calendar-button';
+
 
 @Component({
   selector: 'app-itinerary',
@@ -7,7 +9,8 @@ import { ExpandableComponent } from '../expandable/expandable.component';
     ExpandableComponent
   ],
   templateUrl: './itinerary.component.html',
-  styleUrl: './itinerary.component.css'
+  styleUrl: './itinerary.component.css',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ItineraryComponent {
 

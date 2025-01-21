@@ -40,7 +40,7 @@
 
     <div>
       <h2>Schedule</h2>
-      <app-expandable 
+      <app-expandable
         [title]="'Day One'"
         [description]="'Feburary 7 | 6:30 to 10pm'"
         [expandableTitle]="'Schedule'"
@@ -48,7 +48,7 @@
             { title: '6:30 to 7pm', details: ['Opening Ceremonies'] },
         ]">
       </app-expandable>
-      <app-expandable 
+      <app-expandable
         [title]="'Day Two'"
         [description]="'Feburary 7 | 6:30 to 10pm'"
         [expandableTitle]="'Schedule'"
@@ -56,7 +56,7 @@
             { title: '6:30 to 7pm', details: ['Opening Ceremonies'] },
         ]">
       </app-expandable>
-      <app-expandable 
+      <app-expandable
         [title]="'Day Three'"
         [description]="'Feburary 7 | 6:30 to 10pm'"
         [expandableTitle]="'Schedule'"
@@ -65,6 +65,20 @@
         ]">
       </app-expandable>
     </div>
+  <section>
+    <add-to-calendar-button
+      name="HackHive 2025"
+      description="Add link to schedule"
+      startDate="2025-02-07"
+      startTime="19:00"
+      endDate="2025-02-09"
+      endTime="17:00"
+      timeZone="America/Toronto"
+      location="Ontario Tech University"
+      options="'Apple','Google','Outlook.com','Microsoft365'"
+    ></add-to-calendar-button>
+
+  </section>
 
 </div>
 
