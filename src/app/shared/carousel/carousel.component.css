@@ -40,4 +40,20 @@
     right: 10px;
 }
 
+@media (max-width: 768px) {
+
+    .nav-button {
+        top: 5%;
+        font-size: 50px;
+    }
+
+    .nav-button.left {
+        left: -2px;
+    }
+
+    .nav-button.right {
+        right: -2px;
+    }
+
+}
 
