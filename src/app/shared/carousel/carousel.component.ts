@@ -21,21 +21,15 @@ export class CarouselComponent<T> {
   }
 
   // Go to the next slide
+
+  // Navigate to the next slide, wrapping around when reaching the last slide
   next(): void {
-    if (this.currentSlide < this.totalSlides - 1) {
-      this.currentSlide++;
-    } else {
-      this.currentSlide = 0; // Loop back to the first slide if it's the last slide
-    }
+    this.currentSlide = (this.currentSlide + 1) % this.slides.length; // Wrap around to first slide
   }
 
-  // Go to the previous slide
+  // Navigate to the previous slide, wrapping around to the last slide when at the first
   prev(): void {
-    if (this.currentSlide > 0) {
-      this.currentSlide--;
-    } else {
-      this.currentSlide = this.totalSlides - 1; // Loop back to the last slide if it's the first slide
-    }
+    this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length; // Wrap around to last slide
   }
 
 

@@ -1,16 +1,16 @@
 <header>
-    <form class="flex flex-col bg-zinc-100 p-4 border border-zinc-300 rounded-sm shadow-sm gap-4" [formGroup]="contactForm" (ngSubmit)="onSubmit()" action="javascrpit:void(0)">
+    <form class="flex flex-col bg-zinc-100 p-4 border border-grey-400 rounded-sm shadow-sm gap-4" [formGroup]="contactForm" (ngSubmit)="onSubmit()" action="javascrpit:void(0)">
         <div class="flex flex-col">
-            <label class="text-zinc-600" for="name">NAME</label>
-            <input class="bg-zinc-100 border shadow-sm" type="text" id="name" name="name" formControlName="name"/>
+            <label class="text-zinc-600 pb-2" for="name">NAME</label>
+            <input class="bg-zinc-100 border border-gray-300 drop-shadow-md" type="text" id="name" name="name" formControlName="name"/>
             <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || isValid || contactForm.controls['name'].touched)">
                 <span class="text-red-700 font-medium text-sm" *ngIf="contactForm.controls['name'].errors?.['required']">* Name is required</span>
             </div>
         </div>
 
         <div class="flex flex-col">
-            <label class="text-zinc-600" for="email">EMAIL</label>
-            <input class="bg-zinc-100 border shadow-sm" type="email" id="email" name="email" formControlName="email"/>
+            <label class="text-zinc-600 pb-2" for="email">EMAIL</label>
+            <input class="bg-zinc-100 border border-gray-300 drop-shadow-md" type="email" id="email" name="email" formControlName="email"/>
             <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || isValid || contactForm.controls['email'].touched)">
                 <span class="text-red-700 font-medium text-sm" *ngIf="contactForm.controls['email'].errors?.['required']">* Email is required</span>
                 <span class="text-red-700 font-medium text-sm" *ngIf="contactForm.controls['email'].errors?.['email']">* Invalid email</span>
@@ -18,14 +18,14 @@
         </div>
         
         <div class="flex flex-col">
-            <label class="text-zinc-600" for="message">MESSAGE</label>
-            <textarea class="bg-zinc-100 border shadow-sm" id="message" name="message" formControlName="message"></textarea>
+            <label class="text-zinc-600 pb-2" for="message">MESSAGE</label>
+            <textarea class="bg-zinc-100 border border-gray-300 drop-shadow-md" name="message" formControlName="message"></textarea>
             <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['name'].dirty || isValid || contactForm.controls['name'].touched)">
                 <span class="text-red-700 font-medium text-sm" *ngIf="contactForm.controls['name'].errors?.['required']">* Message content is required</span>
             </div>
         </div>
 
-        <input class="bg-purple-700 hover:bg-transparent text-zinc-100 hover:text-purple-700 border border-transparent hover:border-b-purple-700 p-1 px-2 transition duration-300 mx-auto" type="submit" value="SUBMIT"/>
+        <input class="bg-purple-700 hover:bg-purple-300 text-zinc-100 hover:text-purple-700 border border-transparent p-2 px-2 rounded-lg transition duration-300 mx-auto text-2xl"type="submit" value="Submit"/>
 
     </form>
 </header>
