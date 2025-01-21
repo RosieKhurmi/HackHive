@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { MenuComponent } from '../../core/menu/menu.component';
 import { FooterComponent } from "../../core/footer/footer.component";
 import { ContactComponent } from "../../shared/contact/contact.component";
-import { ChallengesComponent } from '../../shared/challenges/challenges.component';
 import { ExpandableComponent } from '../../shared/expandable/expandable.component';
 import {CountdownComponent} from '../../shared/countdown/countdown.component';
 import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
@@ -14,7 +13,6 @@ import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
   imports: [
     MenuComponent,
     FooterComponent,
-    ChallengesComponent,
     ContactComponent,
     CountdownComponent,
     ExpandableComponent

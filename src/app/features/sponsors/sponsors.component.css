@@ -1,25 +1,28 @@
-.sponsor-section {
+.hero {
 
-  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
 }
 
-.sponsor-section h1{
+.sponsor-section {
+  padding: 20px 50px;
+}
 
+.sponsor-section h1 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 20px;
-
+  text-align: center;
 }
 
 .sponsor-section .cards {
-  
   padding-top: 20px;
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap; /* Ensures cards wrap instead of shrinking */
   justify-content: center;
-
+  gap: 20px; /* Space between the cards */
 }
-
-
-

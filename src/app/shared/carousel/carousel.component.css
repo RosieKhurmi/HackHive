@@ -1,7 +1,7 @@
 .carousel {
     position: relative;
     width: 100%; /* The width of the carousel container */
-    max-width: 90%; /* Optional: Set max-width to control the size of the carousel */
+    max-width: 900px; /* Optional: Set max-width to control the size of the carousel */
     margin: 0 auto;
     overflow: hidden; /* Ensures only one slide is visible at a time */
 }
@@ -34,10 +34,10 @@
 
 .nav-button.left {
     left: 10px;
-  }
+}
   
-  .nav-button.right {
+.nav-button.right {
     right: 10px;
-  }
+}
 
 
