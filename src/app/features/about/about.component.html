@@ -1,12 +1,28 @@
-<section class="bg-gradient-to-b from-yellow-500 via-amber-400 to-amber-500 dark:from-violet-800 dark:via-purple-900 dark:to-violet-900 h-screen">
+<section class="">
 
     <app-menu></app-menu>
     <app-hero></app-hero>
 
-    <!-- Challenges -->
-    <section class="bg-zinc-500 flex flex-col items-center justify-center py-8">
+    <!-- Prizes -->
+    <section class="bg-zinc-100">
+        <div class="flex flex-col items-center text-2xl">
+            <h2 class="w-full py-2 text-5xl font-bold leading-tight text-center">
+            Prizes
+            </h2>
+            <div class="px-6 py-4 max-w-prose">
+            <ul class="">
+                <li><strong>First Place:</strong> Microsoft office tour referral/Dayforce interview (maybe), HackHive 2025 hoodie.</li>
+                <li><strong>Second Place:</strong> HackHive 2025 hoodie.</li>
+                <li><strong>Third Place:</strong> HackHive 2025 hoodie.</li>
+            </ul>
+            </div>
+        </div>
+    </section>
 
-        <h2 class="text-4xl font-bold">Challenges</h2>
+    <!-- Challenges -->
+    <section class="bg-[var(--background)] flex flex-col items-center justify-center py-8">
+
+        <h2 class="text-5xl font-bold mb-8">Challenges</h2>
         <div class="container xl:max-w-90%">
             <div class="flex overflow-x-auto snap-x snap-mandatory 2x5:justify-center">
                 <app-challenges [text]="{
@@ -55,27 +71,27 @@
     </section>
 
     <!-- Judging Criteria -->
-    <section class="bg-zinc-100">
-        <h2 class="text-4xl font-bold">Participant Guidelines</h2>
+    <section class=" px-8 pt-8">
+        <h2 class="text-4xl font-bold mb-8">Participant Guidelines</h2>
         <div>
-            <div>
+            <div class="py-4">
                 <h3 class="text-2xl font-bold">Flexibility</h3>
                 <p>We are encouraging participants to use any technologies or services they are comfortable with, adjusting as necessary to align with their solution's needs.</p>
             </div>
     
-            <div>
+            <div class="py-4">
                 <h3 class="text-2xl font-bold">Collaboration</h3>
                 <p>Work in teams of up to 4 members to brainstorm, design, and build your solution.</p>
             </div>
     
-            <div>
+            <div class="py-4">
                 <h3 class="text-2xl font-bold">Support</h3>
                 <p>Mentors and resources will be available throughout the event to guide participants.</p>
             </div>
         </div>
     </section>
     
-    <section class="bg-white flex flex-col items-center">
+    <section class=" flex flex-col items-center p-8 gap-4">
         <app-expandable
             [title]="'Option 1: Architecture Diagram Challenge'"
             [description]="'Design a detailed architecture diagram for a solution to your chosen challenge. Focus on:'"
@@ -116,22 +132,5 @@
         </app-expandable>
     </section>
     
-    <!-- Prizes -->
-    <section class="bg-zinc-100">
-        <div class="flex flex-col items-center text-2xl">
-            <h2 class="w-full py-2 text-5xl font-bold leading-tight text-center">
-            Prizes
-            </h2>
-            <div class="px-6 py-4 max-w-prose">
-            <ul class="">
-                <li><strong>First Place:</strong> Microsoft office tour referral/Dayforce interview (maybe), HackHive 2025 hoodie.</li>
-                <li><strong>Second Place:</strong> HackHive 2025 hoodie.</li>
-                <li><strong>Third Place:</strong> HackHive 2025 hoodie.</li>
-            </ul>
-            </div>
-        </div>
-    </section>
-    
-
     <app-footer></app-footer>
 </section>
