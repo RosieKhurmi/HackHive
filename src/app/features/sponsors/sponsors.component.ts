@@ -5,6 +5,7 @@ import { MenuComponent } from '../../core/menu/menu.component';
 import { SponsorCardComponent } from '../../shared/sponsor-card/sponsor-card.component';
 import { FooterComponent } from '../../core/footer/footer.component';
 import { CarouselComponent } from '../../shared/carousel/carousel.component';
+import { HeroComponent } from '../../shared/hero/hero.component';
 
 @Component({
   selector: 'app-sponsors',
@@ -15,7 +16,8 @@ import { CarouselComponent } from '../../shared/carousel/carousel.component';
     SponsorCardComponent,
     FooterComponent,
     CommonModule,
-    CarouselComponent
+    CarouselComponent,
+    HeroComponent
   ],
   styleUrls: ['./sponsors.component.css']
 })

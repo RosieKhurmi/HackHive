@@ -5,14 +5,18 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
   templateUrl: './countdown.component.html',
   styleUrls: ['./countdown.component.css']
 })
+
 export class CountdownComponent implements OnInit, OnDestroy {
-  @Input() targetDate: string = '2025-02-07T00:00:00'; // Input makes it easier to change
+
+  @Input() targetDate: string = '2025-02-07T00:00:00'; 
+  
   timeLeft: { days: number; hours: number; minutes: number; seconds: number } = {
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
   };
+
   private intervalId!: ReturnType<typeof setInterval>;
 
   ngOnInit(): void {

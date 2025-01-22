@@ -14,22 +14,40 @@ export class CarouselComponent<T> {
   @Input() slides: T[] = [];
   @Input() slideTemplate!: TemplateRef<any>;
   currentSlide: number = 0;
-  totalSlides: number = this.slides.length;
+  leftMax: boolean = false;
+  rightMax: boolean = false;
+
+  constructor() {
+    this.maxLimits();
+  }
 
   getCurrentSlide(): any {
     return this.slides[this.currentSlide];
   }
 
-  // Go to the next slide
+  maxLimits(): void {
 
-  // Navigate to the next slide, wrapping around when reaching the last slide
-  next(): void {
-    this.currentSlide = (this.currentSlide + 1) % this.slides.length; // Wrap around to first slide
+    this.leftMax = this.currentSlide === 0;
+    this.rightMax = this.currentSlide === this.slides.length - 1;
+
   }
 
-  // Navigate to the previous slide, wrapping around to the last slide when at the first
+  next(): void {
+
+    if (!this.rightMax) {
+      this.currentSlide += 1;
+      this.maxLimits();
+    }
+    
+  }
+
   prev(): void {
-    this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length; // Wrap around to last slide
+    
+    if (!this.leftMax) {
+      this.currentSlide -= 1;
+      this.maxLimits();
+    }
+
   }
 
 

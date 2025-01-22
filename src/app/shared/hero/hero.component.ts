@@ -1,18 +1,19 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, input, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
+  imports: [
+    CommonModule
+  ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
 
-  constructor(private router: Router) {}
+  @Input() title: string = ''; 
+  @Input() subtitle: string = ''; 
 
-  nav(path: string): void {
-    this.router.navigate([path]);
-  }
+  @Input() text: string[] = [];
 
 }

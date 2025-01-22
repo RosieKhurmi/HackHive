@@ -36,11 +36,14 @@
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
 
     .sponsor-card.top {
         flex-direction: column;
-        max-width: 250px;
+        align-items: center;
+        min-width: 250px;
+        max-width: 70vw;
+        padding: auto;
     }
 
     .sponsor-card.top img {

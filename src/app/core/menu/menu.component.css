@@ -13,10 +13,9 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Add background color when scrolled */
 .menu-bar.scrolled {
     background-color: var(--background);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .logo {
@@ -58,7 +57,7 @@
 }
 
 .menu-toggle {
-    display: none; /* Hide toggle button by default */
+    display: none; 
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -74,34 +73,42 @@
 
     .navigation {
         display: none;
-        position: fixed; /* Fixed position for full-screen */
-        top: 0; /* Start at the top of the viewport */
-        left: 0; /* Stretch to the left */
-        width: 100%; /* Take up the entire width */
-        height: 100vh; /* Full viewport height */
-        background-color: var(--primary); /* Full background color */
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100vh; 
         flex-direction: column;
-        justify-content: center; /* Center content vertically */
-        align-items: center; /* Center content horizontally */
-        padding: 0; /* Remove padding */
-        z-index: 10; /* Ensure it's above other content */
-        transition: transform 0.3s ease-in-out;
-        transform: translateY(-100%); /* Initially hidden (off-screen) */
+        padding: 0;
+        z-index: 10; 
+        transition: transform 0.4s ease-in-out;
+        transform: translateY(-100%); 
         background-color: var(--background);
     }
 
-    /* Show the menu items when the menu button is clicked */
     .navigation.open {
         display: flex;
         transform: translateY(0);
     }
 
+    .socials.open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--background);
+        z-index: 10; 
+    }
+
     .menu-toggle {
         display: flex;
         cursor: pointer;
-        z-index: 20; /* Ensure it's above other content */
+        z-index: 20; 
     }
-
-    
 
 }
