@@ -11,7 +11,7 @@
     --foreground-secondary-hover:#a56fd1; */
     --background: #f4f4f5;
   }
-  
+
   @media (prefers-color-scheme: dark) {
     :root {
       /* --background: #1d1622;
@@ -22,4 +22,17 @@
       --foreground-secondary-hover: #7946f0; */
     }
 }
-  
+
+/* These are for the dynamic feature reveal class*/
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out;
+}
+
