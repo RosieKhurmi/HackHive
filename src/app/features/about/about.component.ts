@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { MenuComponent } from '../../core/menu/menu.component'; 
+import { MenuComponent } from '../../core/menu/menu.component';
 import { FooterComponent } from '../../core/footer/footer.component';
 import { HeroComponent } from '../../shared/hero/hero.component';
 import { ExpandableComponent } from '../../shared/expandable/expandable.component';
 import { ChallengesComponent } from '../../shared/challenges/challenges.component';
+import {FeatureRevealDirective} from '../../feature-reveal.directive';
 
 @Component({
   selector: 'app-about',
@@ -12,7 +13,8 @@ import { ChallengesComponent } from '../../shared/challenges/challenges.componen
     FooterComponent,
     HeroComponent,
     ChallengesComponent,
-    ExpandableComponent
+    ExpandableComponent,
+    FeatureRevealDirective
 ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'

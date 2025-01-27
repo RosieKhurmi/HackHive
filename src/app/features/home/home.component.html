@@ -1,12 +1,12 @@
 
-<!-- <div class="bg-gradient-to-b from-purple-700 from-15% via-yellow-500 via-35% to-purple-700 dark:from-violet-700 dark:via-violet-800 dark:to-violet-900"></div> 
-bg-purple-300 hover:bg-purple-100 dark:bg-violet-800 dark:hover:bg-violet-500 dark:text-white font-semibold p-3 mt-6 rounded-3xl transition duration-300 
+<!-- <div class="bg-gradient-to-b from-purple-700 from-15% via-yellow-500 via-35% to-purple-700 dark:from-violet-700 dark:via-violet-800 dark:to-violet-900"></div>
+bg-purple-300 hover:bg-purple-100 dark:bg-violet-800 dark:hover:bg-violet-500 dark:text-white font-semibold p-3 mt-6 rounded-3xl transition duration-300
 text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--background)]
 -->
 
 <body class="bg-gradient-to-tr from-purple-400 20% via-violet-400 50% to-purple-500 80%">
   <app-menu></app-menu>
-  
+
   <!--Hero-->
   <section>
     <div class="pt-12">
@@ -14,10 +14,10 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
         <div class="flex flex-col justify-center items-left px-4 text">
           <p class="text-2xl font-medium text-gray-600 mb-6">OTU CS Club presents...</p>
           <h1 class="text-6xl font-extrabold">HackHive 2025</h1>
-          <p class="text-3xl italic mt-3">AI for a Better Tomorrow</p>        
+          <p class="text-3xl italic mt-3">AI for a Better Tomorrow</p>
           <div class="flex flex-row gap-4 pt-6 mt-8 buttons">
             <button class="bg-yellow-500 text-white py-4 px-6 text-xl rounded-full" (click)="nav('/about')">Explore</button>
-            <button class="bg-purple-700 text-white py-4 px-6 text-xl rounded-full" (click)="nav('/register')">Register</button>          
+            <button class="bg-purple-700 text-white py-4 px-6 text-xl rounded-full" (click)="nav('/register')">Register</button>
           </div>
         </div>
         <div class="icon">
@@ -26,15 +26,15 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
       </div>
     </div>
   </section>
-  
+
   <div class="relative">
       <svg viewBox="0 0 1428 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-2.000000, 44.000000)" class="fill-violet-600 dark:fill-amber-900 stroke-white dark:stroke-indigo-100" fill-rule="nonzero">
-          <path 
+          <path
             stroke-width="1"
             d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
-          <path 
+          <path
             stroke-width="1"
             d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
             opacity="0.100000001"
@@ -148,7 +148,12 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
         [description]="'Feburary 7 | 6:30 to 10pm'"
         [expandableTitle]="'Schedule'"
         [expandableContent]="[
-            { title: '6:30 to 7pm', details: ['Opening Ceremonies'] },
+            { title: '6:30 to 7:00 PM', details: ['Opening Ceremonies'] },
+            { title: '7:00 - 7:45 PM', details: ['Food is Serverd']},
+            { title: '8:00 - 9:00 PM', details: ['UA 1350 - Dayforce Workshop - Technical Interview Prep']},
+            { title: '9:00 - 10:00 PM', details: ['UA 1350 - A talk from the Manager of Rippling']},
+            { title: '8:00 - 11:00 PM', details: ['UA 2140, UA 2120, UA 2240 - Open spaces for teams to work on their project']},
+
         ]">
         </app-expandable>
         <app-expandable
@@ -210,7 +215,7 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
   <section class="flex justify-center items-center p-8">
     <div class="bg-[var(--background)] rounded-lg shadow-lg w-full p-4 max-w-[600px]">
       <h1 class="text-4xl font-bold mb-6 gradient-text text-center pt-5">Contact Us</h1>
-      
+
       <!-- Contact form component -->
       <app-contact></app-contact>
     </div>
