@@ -1,7 +1,9 @@
 <div class="carousel">
     <!-- Navigation Buttons -->
-    <button class="nav-button left" (click)="prev()" [class.end]="leftMax">&#8249;</button>
-    <button class="nav-button right" (click)="next()" [class.end]="rightMax">&#8250;</button>
+    <div class="nav-buttons" [class.hide]="slides.length <= 1">
+      <button class="nav-button left" (click)="prev()" [class.end]="leftMax">&#8249;</button>
+      <button class="nav-button right" (click)="next()" [class.end]="rightMax">&#8250;</button>
+    </div>
   
     <!-- Slide Container -->
     <div class="slides-container" [style.transform]="'translateX(' + (-currentSlide * 100) + '%)'">

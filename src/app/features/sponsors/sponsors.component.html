@@ -10,87 +10,97 @@
   <section class="bg-[var(--background)]">
   
   <!-- Platinum Sponsors    -->
-  <section class="slideshow pt-8">
-      <div *ngIf="platinum.length > 0" class="sponsor-section">
-        <h1>Platinum Sponsors</h1>
-        <app-carousel [slides]="platinum" [slideTemplate]="sponsorTemplate"></app-carousel>
-        <ng-template #sponsorTemplate let-sponsor>
-          <app-sponsor-card
-            [image]="{ src: sponsor.logo, alt: sponsor.name }"
-            [tier]="sponsor.tier"
-            [description]="sponsor.description"
-          ></app-sponsor-card>
-        </ng-template>
-      </div>
-        
+  <section class="pt-8">
+      @if (platinum.length > 0) {
+        <div class="sponsor-section">
+          <h1>Platinum Sponsors</h1>
+          <app-carousel [slides]="platinum" [slideTemplate]="sponsorTemplate"></app-carousel>
+          <ng-template #sponsorTemplate let-sponsor>
+            <app-sponsor-card
+              [image]="{ src: sponsor.logo, alt: sponsor.name }"
+              [tier]="sponsor.tier"
+              [description]="sponsor.description"
+            ></app-sponsor-card>
+          </ng-template>
+        </div>
+      }
   </section>
   
   <!-- Gold Sponsors -->
   <section>
-      <div *ngIf="gold.length > 0" class="sponsor-section">
+    @if (gold.length > 0) {
+      <div class="sponsor-section">
           <h1>Gold Sponsors</h1>
           <div class="cards">
-            <div *ngFor="let s of gold">
+            @for (s of gold; track $index) {
               <app-sponsor-card 
                   [image]="{src: s.logo, alt: s.name}"
                   [tier]="s.tier"
                   [ngClass]="s.tier">
               </app-sponsor-card>
-            </div>
+            }
           </div>
         </div>
+    }
   </section>
   
   <!-- Silver Sponsors -->
   <section>
-      <div *ngIf="silver.length > 0" class="sponsor-section">
+    @if (silver.length > 0) {
+      <div class="sponsor-section">
           <h1>Silver Sponsors</h1>
           <div class="cards">
-            <div *ngFor="let s of silver">
+            @for (s of silver; track $index) {
               <app-sponsor-card 
                   [image]="{src: s.logo, alt: s.name}"
                   [tier]="s.tier"
                   [description]="s.description"
                   [ngClass]="s.tier">
               </app-sponsor-card>
-            </div>
+            }
           </div>
         </div>
+    }
   </section>
   
   <!-- Bronze Sponsors -->
   <section>
-      <div *ngIf="bronze.length > 0" class="sponsor-section">
+    @if (bronze.length > 0) {
+      <div class="sponsor-section">
           <h1>Bronze Sponsors</h1>
           <div class="cards">
-            <div *ngFor="let s of bronze">
+            @for (s of bronze; track $index) {
               <app-sponsor-card 
                   [image]="{src: s.logo, alt: s.name}"
                   [tier]="s.tier"
                   [ngClass]="s.tier">
               </app-sponsor-card>
-          </div>
+            }
           </div>
         </div>
+    }
   </section>
   
   <!-- Collaborator Sponsors -->
   <section>
-      <div *ngIf="collaborator.length > 0" class="sponsor-section">
+    @if (collaborator.length > 0) {
+      <div class="sponsor-section">
           <h1>Collaborators</h1>
           <div class="cards">
-            <div *ngFor="let s of collaborator">
+            @for (s of collaborator; track $index) {
               <app-sponsor-card 
                   [image]="{src: s.logo, alt: s.name}"
                   [tier]="s.tier"
                   [ngClass]="s.tier">
               </app-sponsor-card>
-            </div>
+            }
+          </div>
         </div>
-      </div>
+    }
   </section>
   </section>
 
+  <!-- Footer -->
   <section>
     <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

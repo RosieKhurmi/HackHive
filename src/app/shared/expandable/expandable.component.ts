@@ -17,4 +17,10 @@ export class ExpandableComponent {
   @Input() expandableTitle: string = ''; 
   @Input() expandableContent: { title: string; details: string[] }[] = [];
 
+  isExpanded: boolean = false;
+
+  toggleExpand(): void {
+    this.isExpanded = !this.isExpanded;
+  }
+
 }

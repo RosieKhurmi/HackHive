@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation, OnInit, OnDestroy } from '@angular/core';
+import { CalendarComponent } from '../../shared/calendar/calendar.component';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { MenuComponent } from '../../core/menu/menu.component';
@@ -15,7 +16,8 @@ import computerMan from '../../../assets/icons/undraw_firmware_3fxd.svg';
     FooterComponent,
     ContactComponent,
     CountdownComponent,
-    ExpandableComponent
+    ExpandableComponent,
+    CalendarComponent
   ],
   templateUrl: './home.component.html',
   standalone: true,

@@ -5,9 +5,7 @@
   padding: 20px 0;
   width: 100%;
   bottom: 0;
-  /* Aligns the footer to the bottom */
   left: 0;
-  /* Aligns the footer to the left */
   color: #212529;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -29,26 +27,21 @@
 }
 
 .socials ul li {
-  margin-left: 20px; /* Spacing between menu items */
+  margin-left: 20px; 
 }
 
 .socials ul li a {
   text-decoration: none;
-  color: inherit; /* Maintain text color */
-  transition: color 0.5s; /* Smooth color transition */
-}
-
-/* .socials ul li a:hover {
-  color: var(--background); 
+  color: inherit; 
   transition: color 0.5s; 
-} */
-
+}
+/* 
 @media (max-width: 768px)  {
   
   .socials {
     display: none;
   }
 
-}
+} */
 
 

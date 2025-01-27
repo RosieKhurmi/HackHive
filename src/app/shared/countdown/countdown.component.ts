@@ -9,6 +9,7 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 export class CountdownComponent implements OnInit, OnDestroy {
 
   @Input() targetDate: string = '2025-02-07T00:00:00'; 
+  isHackathon: boolean = false;
   
   timeLeft: { days: number; hours: number; minutes: number; seconds: number } = {
     days: 0,
@@ -36,6 +37,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
       if (timeLeft <= 0) {
         this.clearCountdown();
         this.timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+        this.isHackathon = true;
         return;
       }
 
@@ -44,6 +46,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
       this.timeLeft.minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
       this.timeLeft.seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
     }, 1000);
+
   }
 
   private clearCountdown(): void {

@@ -20,8 +20,6 @@ export class FooterComponent {
   email;
 
   constructor(private sanitizer: DomSanitizer) {
-    // SVGs are dynamically loaded and Angular's security
-    // would otherwise block them as potentially unsafe content
     this.linkedin = this.sanitizer.bypassSecurityTrustHtml(linkedin);
     this.instagram = this.sanitizer.bypassSecurityTrustHtml(instagram);
     this.x = this.sanitizer.bypassSecurityTrustHtml(x);

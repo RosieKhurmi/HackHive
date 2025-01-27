@@ -54,7 +54,6 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
 
   <!--Countdown ToDo -->
   <section class="h-[600px] bg-[var(--background)] flex flex-col justify-center items-center md:h-[400px]">
-    <h1 class="text-5xl font-bold mb-4 gradient-text flex justify-center pb-6 px-8">Get Hacking In...</h1>
     <app-countdown></app-countdown>
   </section>
 
@@ -120,7 +119,8 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
               </a>
             </div>
         </div>
-        <div>
+        
+        <!-- <div>
             <div class="flex items-center mb-2">
                 <svg class="w-10 h-10 mx-4 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
@@ -135,14 +135,14 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
               <a href="#" class="bg-yellow-100 text-yellow-800 transition hover:bg-yellow-500 hover:text-yellow-900 text-lg px-3 py-2 rounded-full">Game Development</a>
               <a href="#" class="bg-yellow-100 text-yellow-800 transition hover:bg-yellow-500 hover:text-yellow-900 text-lg px-3 py-2 rounded-full">Marketing</a>
             </div>
-        </div>
+        </div> -->
       </div>
 
     </div>
 
     <div class="container max-w-5xl mx-auto p-8">
       <h2 class="w-full my-2 text-4xl font-bold leading-tight pb-5">Schedule: </h2>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col items-center p-8 gap-4 pb-4">
         <app-expandable
         [title]="'Day One'"
         [description]="'Feburary 7 | 6:30 to 10pm'"
@@ -215,5 +215,5 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
       <app-contact></app-contact>
     </div>
   </section>
-  <app-footer>
+  <app-footer></app-footer>
 

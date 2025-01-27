@@ -11,7 +11,7 @@
                 <span> {{isResponsiveMenuOpen ? "X" : "#"}}</span>
             </button>
 
-            <ul class="flex flex-row gap-4 items-center font-bold text-lg navigation" [class.open]="isResponsiveMenuOpen">
+            <ul class="flex flex-row gap-2 items-center font-bold text-lg navigation" [class.open]="isResponsiveMenuOpen">
                 <li><a routerLink="/" routerLinkActive="selected" class="hover:text-[var(--foreground-hover)]">Home</a></li>
                 <li><a routerLink="/about" routerLinkActive="selected" class="hover:text-[var(--foreground-hover)]">HackHive 2025</a></li>
                 <li><a routerLink="/sponsors" routerLinkActive="selected" class="hover:text-[var(--foreground-hover)]">Sponsors</a></li>

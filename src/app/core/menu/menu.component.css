@@ -51,8 +51,8 @@
 
 .socials li a p svg {
     display: inline-block;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     transition: fill 0.3s ease-in-out; 
 }
 

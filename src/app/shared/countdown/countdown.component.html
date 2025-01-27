@@ -1,23 +1,30 @@
 <div class="countdown-container">
-  <div class="hex-grid countdown">
-    <!-- Main Countdown Hexagons -->
+  @if (isHackathon) {
     <div class="hex large">
-      <span class="digit">{{ timeLeft.days }}</span>
-      <small>Days</small>
+      <span>The hackathon has begun</span>
     </div>
-    <div class="hex large">
-      <span class="digit">{{ timeLeft.hours }}</span>
-      <small>Hours</small>
+  } @else {
+    <h1 class="text-5xl font-bold mb-4 gradient-text flex justify-center pb-6 px-8">Get Hacking In...</h1>
+    <div class="hex-grid countdown">
+      <!-- Main Countdown Hexagons -->
+      <div class="hex large">
+        <span class="digit">{{ timeLeft.days }}</span>
+        <small>Days</small>
+      </div>
+      <div class="hex large">
+        <span class="digit">{{ timeLeft.hours }}</span>
+        <small>Hours</small>
+      </div>
+      <div class="hex large">
+        <span class="digit">{{ timeLeft.minutes }}</span>
+        <small>Minutes</small>
+      </div>
+      <div class="hex large">
+        <span class="digit">{{ timeLeft.seconds }}</span>
+        <small>Seconds</small>
+      </div>
     </div>
-    <div class="hex large">
-      <span class="digit">{{ timeLeft.minutes }}</span>
-      <small>Minutes</small>
-    </div>
-    <div class="hex large">
-      <span class="digit">{{ timeLeft.seconds }}</span>
-      <small>Seconds</small>
-    </div>
-  </div>
+  }
 </div>
 
 

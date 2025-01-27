@@ -1,4 +1,4 @@
-import { Component, Input, TemplateRef } from '@angular/core';
+import { Component, Input, TemplateRef, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.css'
 })
-export class CarouselComponent<T> {
+export class CarouselComponent<T> implements OnInit {
 
   @Input() slides: T[] = [];
   @Input() slideTemplate!: TemplateRef<any>;
@@ -17,7 +17,7 @@ export class CarouselComponent<T> {
   leftMax: boolean = false;
   rightMax: boolean = false;
 
-  constructor() {
+  ngOnInit() {
     this.maxLimits();
   }
 
