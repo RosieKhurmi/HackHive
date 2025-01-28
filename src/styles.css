@@ -5,6 +5,12 @@
 /* Define base color variables */
 :root {
   --background: #f4f4f5;
+  --font: #181818;
+}
+
+body {
+  color: var(--font);
+  background-color: var(--background); 
 }
 
 /* Dark mode customization */
