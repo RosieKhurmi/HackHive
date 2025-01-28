@@ -116,7 +116,7 @@
               </a>
             </div>
         </div>
-        
+
         <!-- <div>
             <div class="flex items-center mb-2">
                 <svg class="w-10 h-10 mx-4 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,32 +142,42 @@
       <div class="flex flex-col items-center p-8 gap-4 pb-4">
         <app-expandable
         [title]="'Day One'"
-        [description]="'Feburary 7 | 6:30 to 10 PM'"
+        [description]="'Feburary 7 | 6:30 to 10pm'"
         [expandableTitle]="'Schedule'"
         [expandableContent]="[
-            { title: '6:40 to 7:45 PM', details: ['UA 1350 - Opening Ceremonies & Refreshments'] },
+            { title: '6:30 to 7:00 PM', details: ['Opening Ceremonies'] },
+            { title: '7:00 - 7:45 PM', details: ['Food is Serverd']},
             { title: '8:00 - 9:00 PM', details: ['UA 1350 - Dayforce Workshop - Technical Interview Prep']},
-            { title: '9:00 - 9:45 PM', details: ['UA 1350 - A talk from the Manager of Dayforce']},
+            { title: '9:00 - 10:00 PM', details: ['UA 1350 - A talk from the Manager of Rippling']},
+            { title: '8:00 - 11:00 PM', details: ['UA 2140, UA 2120, UA 2240 - Open spaces for teams to work on their project']},
+
         ]">
         </app-expandable>
         <app-expandable
           [title]="'Day Two'"
-          [description]="'Feburary 8 | 7:30 AM to 3:30 PM'"
+          [description]="'Feburary 8 | 8:00am to 3:30pm'"
           [expandableTitle]="'Schedule'"
           [expandableContent]="[
-              { title: '7:30 AM to 3:40 PM', details: ['UA2240, UA2220, UA2230, UA3240, UA3140, UA3130, UA3120, and UA3220 SHA 133 ERC 2056 BIT 2050 - Workshops'] },
-              { title: '1:00 to 2:00 PM', details: ['UA 3220 - Mentoring and Extra Support'] }
+            { title: '8:00 to 9:00 AM', details: ['UA 2240 - Microsoft Workshop'] },
+            { title: '9:05 - 10:00 AM', details: ['UA 2220 - Brilliant Catalyst Workshop']},
+            { title: '10:05 - 11:00 AM', details: ['UA 2230 - Co-op Office Workshop -By Amanda Miller']},
+            { title: '11:05 - 12:00 PM', details: ['UA 3120 - Science Council Workshop']},
+            { title: '12:05 - 1:00 PM', details: ['UA 3130 - User Design Workshop - By Mariana Shimabukuro']},
+            { title: '1:05 - 2:00 PM', details: ['UA 3220 - Lunch is Served']},
+            { title: '1:00 - 2:00 PM', details: ['UA 3240 - Mentor room - Participants may use it to get advice, feedback or help']},
+            { title: '2:05 - 3:00 PM', details: ['UA 3140 - AI Startup Workshop - By Suhas from Amazon']},
+
           ]">
         </app-expandable>
         <app-expandable
           [title]="'Day Three'"
-          [description]="'Feburary 9 | 8:00 AM to 4:30 PM'"
+          [description]="'Feburary 9 | 8:00 to 3:30 PM'"
           [expandableTitle]="'Schedule'"
           [expandableContent]="[
-            { title: '8:00 AM to 4:30 PM', details: ['UA2130, UA2120, UA2240, UA2220, BIT 2080 - Judging'] },
-            { title: '12:00 to 1:00 PM', details: ['BIT 2080 - Lunch'] },
-            { title: '10:00 AM to 1:00 PM', details: ['BIT Atrium - Sponsor Booths'] },
-            { title: '1:00 to 3:30 PM', details: ['BIT 2080 - Closing Ceremony'] },
+            { title: '8:00 AM to 1:00 PM', details: ['UA2130, UA2120, UA2240, UA2220, BIT2080 - Judging rooms'] },
+            { title: '10:00 AM - 1:00 PM', details: ['BIT Atrium - Sponsorship Booths']},
+            { title: '12:00 - 1:00 PM', details: ['BIT2080 - Snacks Provided']},
+            { title: '2:05 - 3:00 PM', details: ['BIT Atrium - Closing Ceremony']},
           ]">
         </app-expandable>
       </div>
