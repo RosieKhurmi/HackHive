@@ -1,8 +1,8 @@
-<div class="group cursor-pointer w-[90vw]">
-  <div class="bg-white p-6 shadow-lg rounded-lg" (click)="toggleExpand()">
+<div class=" dark:bg-[#282828] group cursor-pointer w-[90vw] rounded-xl">
+  <div class="p-6 shadow-lg rounded-lg" (click)="toggleExpand()">
     <h3 class="text-xl font-bold mb-4">{{ title }}</h3>
-    <p class="text-gray-600 mb-4">{{ description }}</p>
-    <ul class="list-disc ml-6 text-gray-600">
+    <p class="mb-4">{{ description }}</p>
+    <ul class="list-disc ml-6 ">
       @for (point of points; track $index) {
         <li class="mb-2">
           <strong>{{ point.title }}:</strong> {{ point.details }}
@@ -13,7 +13,7 @@
 
   <!-- Expandable content -->
   @if (isExpanded) {
-    <div class="overflow-hidden bg-zinc-100 rounded-lg shadow-xl
+    <div class="overflow-hidden rounded-lg shadow-xl
     transition-all duration-300 ease-in-out">
       <div class="p-6">
         <h4 class="font-bold mb-4">{{ expandableTitle }}</h4>

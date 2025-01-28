@@ -1,11 +1,15 @@
 .sponsor-card.top{
     
+    background-color: #282828;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
-    max-width: 800px;
-
+    max-width: 900px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
 }
 
 .sponsor-card.top img{
@@ -14,15 +18,18 @@
     margin-right: 16px;
     padding: 20px;
     border-radius: 8px;
+    justify-content: center;
 }
 
 .sponsor-card.other {
+    background-color: #282828;
     display: inline-block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     margin: 10px;
     width: auto;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .sponsor-card.other:hover {
@@ -42,7 +49,7 @@
         flex-direction: column;
         align-items: center;
         min-width: 250px;
-        max-width: 70vw;
+        max-width: 75vw;
         padding: auto;
     }
 

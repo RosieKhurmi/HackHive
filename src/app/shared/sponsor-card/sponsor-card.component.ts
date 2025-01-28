@@ -14,6 +14,7 @@ export class SponsorCardComponent {
 
   image = input.required<{src: string; alt: string} >();
   tier = input.required<string>();
+  url = input.required<string>();
   @Input() description: string = "";
 
 }

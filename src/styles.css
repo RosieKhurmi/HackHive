@@ -2,28 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define base color variables */
 :root {
-    /* --background: #ffca56;
-    --background-secondary: #6d6d6d;
-    --foreground: #e9f2ff;
-    --foreground-hover: #a56fd1;
-    --foreground-secondary: #ffffff;
-    --foreground-secondary-hover:#a56fd1; */
-    --background: #f4f4f5;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      /* --background: #1d1622;
-      --background-secondary: #1d1622;
-      --foreground: #ffffff;
-      --foreground-hover: #e9c2f5;
-      --foreground-secondary: #e7e7fa;
-      --foreground-secondary-hover: #7946f0; */
-    }
+  --background: #f4f4f5;
 }
 
-/* These are for the dynamic feature reveal class*/
+/* Dark mode customization */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font: #f4f4f5;
+    --background: #181818;;
+  }
+
+  body {
+    color: var(--font);
+    background-color: var(--background); 
+  }
+}
+
+/* Dynamic feature reveal classes */
 .hidden {
   opacity: 0;
   visibility: hidden;
@@ -35,4 +32,3 @@
   visibility: visible;
   transition: opacity 1s ease-in-out;
 }
-

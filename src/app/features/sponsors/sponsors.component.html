@@ -1,4 +1,6 @@
-<body class="bg-gradient-to-tr from-purple-400 20% via-violet-400 50% to-purple-500 80%">
+<!-- "bg-gradient-to-tr from-purple-400 20% via-violet-400 50% to-purple-500 80%"<div class="bg-gradient-to-tr from-purple-400 20% via-violet-400 50% to-purple-500 80%"></div> -->
+
+<body>
 
   <app-menu></app-menu>
 
@@ -7,7 +9,7 @@
     subtitle="We are grateful to our sponsors for their support.">
   </app-hero>
 
-  <section class="bg-[var(--background)]">
+  <section class="">
   
   <!-- Platinum Sponsors    -->
   <section class="pt-8">
@@ -20,6 +22,7 @@
               [image]="{ src: sponsor.logo, alt: sponsor.name }"
               [tier]="sponsor.tier"
               [description]="sponsor.description"
+              [url]="sponsor.url"
             ></app-sponsor-card>
           </ng-template>
         </div>
@@ -36,7 +39,8 @@
               <app-sponsor-card 
                   [image]="{src: s.logo, alt: s.name}"
                   [tier]="s.tier"
-                  [ngClass]="s.tier">
+                  [ngClass]="s.tier"
+                  [url]="s.url">
               </app-sponsor-card>
             }
           </div>
@@ -55,7 +59,8 @@
                   [image]="{src: s.logo, alt: s.name}"
                   [tier]="s.tier"
                   [description]="s.description"
-                  [ngClass]="s.tier">
+                  [ngClass]="s.tier"
+                  [url]="s.url">
               </app-sponsor-card>
             }
           </div>
@@ -73,7 +78,8 @@
               <app-sponsor-card 
                   [image]="{src: s.logo, alt: s.name}"
                   [tier]="s.tier"
-                  [ngClass]="s.tier">
+                  [ngClass]="s.tier"
+                  [url]="s.url">
               </app-sponsor-card>
             }
           </div>
@@ -91,7 +97,8 @@
               <app-sponsor-card 
                   [image]="{src: s.logo, alt: s.name}"
                   [tier]="s.tier"
-                  [ngClass]="s.tier">
+                  [ngClass]="s.tier"
+                  [url]="s.url">
               </app-sponsor-card>
             }
           </div>
@@ -101,7 +108,7 @@
   </section>
 
   <!-- Footer -->
-  <section>
+  <section class="dark:to-purple-900 dark:via-purple-900 dark:via-purple-800 bg-gradient-to-br from-purple-800 to-purple-900 via-purple-900 via-purple-800">
     <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">

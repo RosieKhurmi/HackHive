@@ -1,10 +1,5 @@
-
-<!-- <div class="bg-gradient-to-b from-purple-700 from-15% via-yellow-500 via-35% to-purple-700 dark:from-violet-700 dark:via-violet-800 dark:to-violet-900"></div>
-bg-purple-300 hover:bg-purple-100 dark:bg-violet-800 dark:hover:bg-violet-500 dark:text-white font-semibold p-3 mt-6 rounded-3xl transition duration-300
-text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--background)]
--->
-
-<body class="bg-gradient-to-tr from-purple-400 20% via-violet-400 50% to-purple-500 80%">
+<body 
+  class="dark:to-purple-900 dark:via-purple-900 dark:via-purple-800 bg-gradient-to-br from-purple-800 to-purple-900 via-purple-900 via-purple-800">
   <app-menu></app-menu>
 
   <!--Hero-->
@@ -12,7 +7,7 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
     <div class="pt-12">
       <div class="flex flex-row justify-center items-center px-12 gap-8 hero">
         <div class="flex flex-col justify-center items-left px-4 text">
-          <p class="text-2xl font-medium text-gray-600 mb-6">OTU CS Club presents...</p>
+          <p class="text-2xl font-medium mb-6">OTU CS Club presents...</p>
           <h1 class="text-6xl font-extrabold">HackHive 2025</h1>
           <p class="text-3xl italic mt-3">AI for a Better Tomorrow</p>
           <div class="flex flex-row gap-4 pt-6 mt-8 buttons">
@@ -53,15 +48,15 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
   </div>
 
   <!--Countdown ToDo -->
-  <section class="h-[600px] bg-[var(--background)] flex flex-col justify-center items-center md:h-[400px]">
+  <section class="h-[600px] flex flex-col justify-center items-center md:h-[400px] dark:bg-[var(--background)]">
     <app-countdown></app-countdown>
   </section>
 
   <!-- General Description -->
-  <section class="bg-[var(--background)]">
+  <section class="dark:bg-[var(--background)]">
     <div class="container max-w-5xl mx-auto p-8">
 
-      <p class="w-full my-2 text-5xl font-bold leading-tight text-[var(--foreground)]">
+      <p class="w-full my-2 text-5xl font-bold leading-tight ">
         What's HackHive?
       </p>
 
@@ -80,7 +75,7 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
 
       <!-- Event Overview -->
       <div class="max-w-prose">
-        <p class="text-2xl font-bold my-8 text-[var(--foreground)]">The event is structured to allow students to explore their chosen topic through one of two pathways:</p>
+        <p class="text-2xl font-bold my-8 dark:text-[#c0c0c0]">The event is structured to allow students to explore their chosen topic through one of two pathways:</p>
 
         <ul>
           <li>
@@ -98,7 +93,7 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
   </section>
 
   <!-- Itinerary -->
-  <section class="bg-[var(--background)]">
+  <section class="dark:bg-[var(--background)]">
     <div class="container max-w-5xl mx-auto px-8 pt-2">
       <div >
         <p class="w-full my-2 text-5xl font-bold leading-tight pb-5">
@@ -113,9 +108,9 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
             </svg>
             <div class="flex flex-col">
-              <p class="text-gray-700 text-2xl pt-2">Ontario Tech University</p>
+              <p class="text-2xl pt-2">Ontario Tech University</p>
               <a href="https://maps.app.goo.gl/ze14Bemr7Akhz1gY9?g_st=com.google.maps.preview.copy" target="_blank">
-                <p class="text-gray-500 underline text-xl pt-1">2000 Simcoe St N, Oshawa, ON L1G 0C5</p>
+                <p class="dark:text-gray-200 text-gray-500 underline text-xl pt-1">2000 Simcoe St N, Oshawa, ON L1G 0C5</p>
               </a>
             </div>
         </div>
@@ -212,8 +207,8 @@ text-[var(--foreground-secondary)] border-b border-transparent dark:bg-[var(--ba
       </g>
       </g>
   </svg>
-  <section class="flex justify-center items-center p-8">
-    <div class="bg-[var(--background)] rounded-lg shadow-lg w-full p-4 max-w-[600px]">
+  <section class="flex justify-center items-center p-8 ">
+    <div class="rounded-lg shadow-lg w-full p-4 max-w-[600px] dark:bg-[var(--background)]">
       <h1 class="text-4xl font-bold mb-6 gradient-text text-center pt-5">Contact Us</h1>
 
       <!-- Contact form component -->

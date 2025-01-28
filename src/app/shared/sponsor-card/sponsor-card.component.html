@@ -4,14 +4,23 @@
     'other': tier() !== 'platinum'
     }">
 
-    <img
+    <a
+        [href]="url()">
+        <img
         [src]="image().src" 
         [alt]="image().alt" 
-    />
+        />
+    </a>
 
     <div *ngIf="tier() === 'platinum'">
-        <p>{{description}}</p>
+        <p class="mb-5"
+            >{{description}}
+        </p>
+        <a 
+            class="font-bold rounded-md py-2" 
+            [href]="url()">
+            Click Here to Learn More
+        </a>
     </div>
 
 </div>
-

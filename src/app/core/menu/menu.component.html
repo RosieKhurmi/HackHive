@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <div class="flex justify-between items-center text-[var(--foreground)] menu-bar" [class.scrolled]="isScrolling">
+        <div class="flex justify-between items-center menu-bar" [class.scrolled]="isScrolling">
 
             <a routerLink="/" routerLinkActive="selected" class="flex flex-row items-center gap-3 logo">
                 <img src="../../../assets/images/hackhive.png" class="w-12"/>
@@ -18,11 +18,11 @@
                 <li><a routerLink="/register" routerLinkActive="selected" class="hover:text-[var(--foreground-hover)]">Register</a></li>            
             </ul>
 
-            <ul class="hidden sm:flex flex-row items-center socials" [class.open]="isResponsiveMenuOpen">
-                <li><a href="https://www.linkedin.com/company/otu-cs-club/" target="_blank" class="fill-[var(--foreground-secondary)] hover:fill-[var(--foreground-secondary-hover)]"><p [innerHTML]="linkedin"></p></a></li>
-                <li><a href="https://www.instagram.com/otu.csclub/" target="_blank" class="fill-[var(--foreground-secondary)] hover:fill-[var(--foreground-secondary-hover)]"><p [innerHTML]="instagram"></p></a></li>
-                <li><a href="https://x.com/OTUcsclub/" target="_blank"><p [innerHTML]="x" class="fill-[var(--foreground-secondary)] hover:fill-[var(--foreground-secondary-hover)]"></p></a></li>
-                <li><a href="mailto:otu.csclub@gmail.com?subject=%5BINQUIRY%5D%20-%20HackHive%202025" target="_blank" class="fill-[var(--foreground-secondary)] hover:fill-[var(--foreground-secondary-hover)]"><p [innerHTML]="email"></p></a></li>
+            <ul class="sm:flex flex-row items-center socials" [class.open]="isResponsiveMenuOpen">
+                <li><a href="https://www.linkedin.com/company/otu-cs-club/" target="_blank" class="fill-[var(--font)] hover:fill-[var(--foreground-secondary-hover)]"><p [innerHTML]="linkedin"></p></a></li>
+                <li><a href="https://www.instagram.com/otu.csclub/" target="_blank" class="fill-[var(--font)] hover:fill-[var(--foreground-secondary-hover)]"><p [innerHTML]="instagram"></p></a></li>
+                <li><a href="https://x.com/OTUcsclub/" target="_blank"><p [innerHTML]="x" class="fill-[var(--font)] hover:fill-[var(--foreground-secondary-hover)]"></p></a></li>
+                <li><a href="mailto:otu.csclub@gmail.com?subject=%5BINQUIRY%5D%20-%20HackHive%202025" target="_blank" class="fill-[var(--font)] hover:fill-[var(--foreground-secondary-hover)]"><p [innerHTML]="email"></p></a></li>
             </ul>
         </div>
 

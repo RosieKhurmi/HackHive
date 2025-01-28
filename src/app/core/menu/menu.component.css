@@ -112,3 +112,15 @@
     }
 
 }
+
+@media (preferes-color-scheme: dark) {
+
+    .menu-bar {
+        color: var(--font);
+    }
+
+    .socials {
+        color: var(--font);
+    }
+
+}

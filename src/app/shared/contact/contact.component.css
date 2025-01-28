@@ -17,3 +17,11 @@
     background-color: #7b1fa2;
     cursor: pointer;
 }
+
+@media (prefers-color-scheme: dark) {
+    
+    .submit-btn {
+        background-color: #181818;
+    }
+
+}
