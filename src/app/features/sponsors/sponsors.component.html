@@ -9,105 +9,126 @@
     subtitle="We are grateful to our sponsors for their support.">
   </app-hero>
 
-  <section class="">
-  
-  <!-- Platinum Sponsors    -->
-  <section class="pt-8">
-      @if (platinum.length > 0) {
-        <div class="sponsor-section">
-          <h1>Platinum Sponsors</h1>
-          <app-carousel [slides]="platinum" [slideTemplate]="sponsorTemplate"></app-carousel>
-          <ng-template #sponsorTemplate let-sponsor>
-            <app-sponsor-card
-              [image]="{ src: sponsor.logo, alt: sponsor.name }"
-              [tier]="sponsor.tier"
-              [description]="sponsor.description"
-              [url]="sponsor.url"
-            ></app-sponsor-card>
-          </ng-template>
-        </div>
-      }
-  </section>
-  
-  <!-- Gold Sponsors -->
-  <section>
-    @if (gold.length > 0) {
-      <div class="sponsor-section">
-          <h1>Gold Sponsors</h1>
-          <div class="cards">
-            @for (s of gold; track $index) {
-              <app-sponsor-card 
-                  [image]="{src: s.logo, alt: s.name}"
-                  [tier]="s.tier"
-                  [ngClass]="s.tier"
-                  [url]="s.url">
-              </app-sponsor-card>
-            }
-          </div>
-        </div>
-    }
-  </section>
-  
-  <!-- Silver Sponsors -->
-  <section>
-    @if (silver.length > 0) {
-      <div class="sponsor-section">
-          <h1>Silver Sponsors</h1>
-          <div class="cards">
-            @for (s of silver; track $index) {
-              <app-sponsor-card 
-                  [image]="{src: s.logo, alt: s.name}"
-                  [tier]="s.tier"
-                  [description]="s.description"
-                  [ngClass]="s.tier"
-                  [url]="s.url">
-              </app-sponsor-card>
-            }
-          </div>
-        </div>
-    }
-  </section>
-  
-  <!-- Bronze Sponsors -->
-  <section>
-    @if (bronze.length > 0) {
-      <div class="sponsor-section">
-          <h1>Bronze Sponsors</h1>
-          <div class="cards">
-            @for (s of bronze; track $index) {
-              <app-sponsor-card 
-                  [image]="{src: s.logo, alt: s.name}"
-                  [tier]="s.tier"
-                  [ngClass]="s.tier"
-                  [url]="s.url">
-              </app-sponsor-card>
-            }
-          </div>
-        </div>
-    }
-  </section>
-  
+<!--  <section class="">-->
+<!--  -->
+<!--  &lt;!&ndash; Platinum Sponsors    &ndash;&gt;-->
+<!--  <section class="pt-8">-->
+<!--      @if (platinum.length > 0) {-->
+<!--        <div class="sponsor-section">-->
+<!--          <h1>Platinum Sponsors</h1>-->
+<!--          <app-carousel [slides]="platinum" [slideTemplate]="sponsorTemplate"></app-carousel>-->
+<!--          <ng-template #sponsorTemplate let-sponsor>-->
+<!--            <app-sponsor-card-->
+<!--              [image]="{ src: sponsor.logo, alt: sponsor.name }"-->
+<!--              [tier]="sponsor.tier"-->
+<!--              [description]="sponsor.description"-->
+<!--              [url]="sponsor.url"-->
+<!--            ></app-sponsor-card>-->
+<!--          </ng-template>-->
+<!--        </div>-->
+<!--      }-->
+<!--  </section>-->
+<!--  -->
+<!--  &lt;!&ndash; Gold Sponsors &ndash;&gt;-->
+<!--  <section>-->
+<!--    @if (gold.length > 0) {-->
+<!--      <div class="sponsor-section">-->
+<!--          <h1>Gold Sponsors</h1>-->
+<!--          <div class="cards">-->
+<!--            @for (s of gold; track $index) {-->
+<!--              <app-sponsor-card -->
+<!--                  [image]="{src: s.logo, alt: s.name}"-->
+<!--                  [tier]="s.tier"-->
+<!--                  [ngClass]="s.tier"-->
+<!--                  [url]="s.url">-->
+<!--              </app-sponsor-card>-->
+<!--            }-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    }-->
+<!--  </section>-->
+<!--  -->
+<!--  &lt;!&ndash; Silver Sponsors &ndash;&gt;-->
+<!--  <section>-->
+<!--    @if (silver.length > 0) {-->
+<!--      <div class="sponsor-section">-->
+<!--          <h1>Silver Sponsors</h1>-->
+<!--          <div class="cards">-->
+<!--            @for (s of silver; track $index) {-->
+<!--              <app-sponsor-card -->
+<!--                  [image]="{src: s.logo, alt: s.name}"-->
+<!--                  [tier]="s.tier"-->
+<!--                  [description]="s.description"-->
+<!--                  [ngClass]="s.tier"-->
+<!--                  [url]="s.url">-->
+<!--              </app-sponsor-card>-->
+<!--            }-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    }-->
+<!--  </section>-->
+<!--  -->
+<!--  &lt;!&ndash; Bronze Sponsors &ndash;&gt;-->
+<!--  <section>-->
+<!--    @if (bronze.length > 0) {-->
+<!--      <div class="sponsor-section">-->
+<!--          <h1>Bronze Sponsors</h1>-->
+<!--          <div class="cards">-->
+<!--            @for (s of bronze; track $index) {-->
+<!--              <app-sponsor-card -->
+<!--                  [image]="{src: s.logo, alt: s.name}"-->
+<!--                  [tier]="s.tier"-->
+<!--                  [ngClass]="s.tier"-->
+<!--                  [url]="s.url">-->
+<!--              </app-sponsor-card>-->
+<!--            }-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    }-->
+<!--  </section>-->
+<!--  -->
   <!-- Collaborator Sponsors -->
-  <section>
-    @if (collaborator.length > 0) {
-      <div class="sponsor-section">
-          <h1>Collaborators</h1>
-          <div class="cards">
-            @for (s of collaborator; track $index) {
-              <app-sponsor-card 
-                  [image]="{src: s.logo, alt: s.name}"
-                  [tier]="s.tier"
-                  [ngClass]="s.tier"
-                  [url]="s.url">
+<!--  <section>-->
+<!--    @if (collaborator.length > 0) {-->
+<!--      <div class="sponsor-section">-->
+<!--          <h1>Collaborators</h1>-->
+<!--          <div class="cards">-->
+<!--            @for (s of collaborator; track $index) {-->
+<!--              <app-sponsor-card -->
+<!--                  [image]="{src: s.logo, alt: s.name}"-->
+<!--                  [tier]="s.tier"-->
+<!--                  [ngClass]="s.tier"-->
+<!--                  [url]="s.url">-->
+<!--              </app-sponsor-card>-->
+<!--            }-->
+<!--          </div>-->
+<!--        </div>-->
+<!--    }-->
+<!--  </section>-->
+<!--  </section>-->
+
+  <section class="pt-8">
+    <div class="sponsor-section">
+      <h1>Our Sponsors</h1>
+      <div class="cards">
+        @for (tierName of ['Platinum', 'Gold', 'Silver', 'Bronze', 'Collaborator']; let i = $index;track i) {
+          @for (sponsor of [platinum, gold, silver, bronze, collaborator][i]; track $index) {
+            <div class="sponsor-item" style="width: 100%;text-align: center; margin: 0 auto;">
+            <app-sponsor-card
+                [image]="{ src: sponsor.logo, alt: sponsor.name }"
+                [tier]="tierName"
+                [description]="sponsor.description"
+                [url]="sponsor.url">
               </app-sponsor-card>
-            }
-          </div>
-        </div>
-    }
-  </section>
+            </div>
+          }
+        }
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
+
+    <!-- Footer -->
   <section class="dark:to-purple-900 dark:via-purple-900 dark:via-purple-800 bg-gradient-to-br from-purple-800 to-purple-900 via-purple-900 via-purple-800">
     <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

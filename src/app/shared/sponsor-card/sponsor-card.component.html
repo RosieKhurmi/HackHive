@@ -1,5 +1,5 @@
-<div class="sponsor-card" 
-    [ngClass]="{ 
+<div class="sponsor-card"
+    [ngClass]="{
     'top': tier() === 'platinum',
     'other': tier() !== 'platinum'
     }">
@@ -7,8 +7,8 @@
     <a
         [href]="url()">
         <img
-        [src]="image().src" 
-        [alt]="image().alt" 
+        [src]="image().src"
+        [alt]="image().alt"
         />
     </a>
 
@@ -16,8 +16,8 @@
         <p class="mb-5"
             >{{description}}
         </p>
-        <a 
-            class="font-bold rounded-md py-2" 
+        <a
+            class="font-bold rounded-md py-2"
             [href]="url()">
             Click Here to Learn More
         </a>
