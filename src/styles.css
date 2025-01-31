@@ -6,23 +6,24 @@
 :root {
   --background: #f4f4f5;
   --font: #181818;
+  --font: #000000;
 }
 
 body {
   color: var(--font);
-  background-color: var(--background); 
+  background-color: var(--background);
 }
 
 /* Dark mode customization */
 @media (prefers-color-scheme: dark) {
   :root {
-    --font: #f4f4f5;
-    --background: #181818;;
+    --font: #000000;
+    --background: #181818;
   }
 
   body {
     color: var(--font);
-    background-color: var(--background); 
+    background-color: var(--background);
   }
 }
 
