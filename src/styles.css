@@ -5,7 +5,7 @@
 /* Define base color variables */
 :root {
   --background: #f4f4f5;
-  --font: #181818;
+  --font: #ffffff;
   --font: #000000;
 }
 
@@ -17,7 +17,7 @@ body {
 /* Dark mode customization */
 @media (prefers-color-scheme: dark) {
   :root {
-    --font: #000000;
+    --font: #ffffff;
     --background: #181818;
   }
 
