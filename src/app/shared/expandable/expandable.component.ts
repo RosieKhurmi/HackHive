@@ -13,6 +13,7 @@ export class ExpandableComponent {
 
   @Input() title: string = ''; 
   @Input() description: string = ''; 
+  @Input() scoringSheet: string = '';
   @Input() points: { title: string; details: string }[] = [];
   @Input() expandableTitle: string = ''; 
   @Input() expandableContent: { title: string; details: string[] }[] = [];

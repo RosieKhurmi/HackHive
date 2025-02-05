@@ -1,7 +1,12 @@
 <div class=" dark:bg-[#282828] group cursor-pointer w-[90vw] rounded-xl">
   <div class="p-6 shadow-lg rounded-lg" (click)="toggleExpand()">
-    <h3 class="text-xl font-bold mb-4">{{ title }}</h3>
-    <p class="mb-4">{{ description }}</p>
+    <h3 class="text-2xl font-bold mb-4">{{ title }}</h3>
+    @if(scoringSheet.length > 0) {
+      <div class="flex justify-center">
+        <a class=" bg-[var(--background)] text-white font-medium py-2 px-4 rounded-full hover:bg-purple-500" [href]="scoringSheet" target="_blank">Scoring Sheet</a>
+      </div>
+    }
+    <p class="my-4">{{ description }}</p>
     <ul class="list-disc ml-6 ">
       @for (point of points; track $index) {
         <li class="mb-2">

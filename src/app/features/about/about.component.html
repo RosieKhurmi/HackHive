@@ -153,27 +153,31 @@ dark:bg-gradient-to-bl dark:from-purple-700 dark:to-purple-900 dark:via-purple-8
     <section class="bg-[var(--background)] flex flex-col items-center p-8 gap-4 pb-4">
        <div appFeatureReveal="2025-02-07T19:15:00">
         <app-expandable
-            [title]="'Option 1: Architecture Diagram Challenge'"
-            [description]="'Design a detailed architecture diagram for a solution to your chosen challenge. Focus on:'"
-            [points]="[
-            { title: 'Key Challenges', details: 'Identify and address critical issues within the topic.' },
-            { title: 'Services and Tools', details: 'Choose technologies that align with your solution\'s goals.' },
-            { title: 'System Flow', details: 'Clearly illustrate how data moves within the system.' },
-            { title: 'Scalability and Security', details: 'Ensure the design is secure, reliable, and can grow as needed.' }
-            ]"
-            [expandableTitle]="'What to Submit - Presentation Deck Requirements:'"
-            [expandableContent]="[
-            { title: 'Title Slide', details: ['Project Name and Team Members'] },
-            { title: 'Problem Statement', details: ['Clearly define the problem within your chosen category and its significance'] },
-            { title: 'Comprehensive Diagram', details: ['Showcase a detailed architecture diagram with clear annotations explaining components, data flow, and system interactions'] },
-            { title: 'Design Rationale', details: ['Provide a written explanation of your design choices, how they address the identified challenges, and why specific tools, frameworks, or services were selected'] },
-            { title: 'Scalability, Security, and Reliability', details: ['Highlight how your architecture ensures scalability, maintains security, and ensures reliability for the proposed solution'] },
-            { title: 'Innovation', details: ['Emphasize any innovative features or approaches used in your design'] },
-            { title: 'Video', details: ['Create a video (not exceeding 2 minutes) to walk through your presentation and visually explain your architecture'] }
-            ]"
-        ></app-expandable>
+        [title]="'Option 1: AI Solution Design & Strategy Challenge'"
+        [scoringSheet]="'../../../assets/scoring_sheets/option_1.pdf'"
+        [description]="'In this challenge, you’ll focus on designing a complete AI-powered solution to solve a real-world problem. Key aspects include:'"
+        [points]="[
+          { title: 'Identify the Problem', details: 'Choose a real-world challenge (e.g., health, education, accessibility). Clearly define the problem and the beneficiaries of your solution.' },
+          { title: 'Design the AI-Powered System', details: 'Create a system architecture diagram showing data collection, AI processing, and output delivery.' },
+          { title: 'Basic AI Prototype', details: 'Build a simple AI demo using a pre-trained model or basic ML algorithm to demonstrate your concept works.' },
+          { title: 'Explain Your Design Choices', details: 'Provide a written explanation of your model, tools, and how your design solves the problem while ensuring scalability, security, and ethical AI use.' },
+          { title: 'Consider Real-World Application', details: 'Address how your solution could be implemented and potential technical or ethical challenges.' }
+        ]"
+        [expandableTitle]="'What to Submit - Presentation Deck Requirements:'"
+        [expandableContent]="[
+          { title: 'Title Slide', details: ['Project Name and Team Members'] },
+          { title: 'Problem Statement', details: ['Clearly define the real-world problem and its significance.'] },
+          { title: 'Comprehensive Diagram', details: ['Showcase a detailed architecture diagram with clear annotations explaining components, data flow, and system interactions.'] },
+          { title: 'Basic AI Prototype Demo', details: ['Include a simple demo to prove the concept.'] },
+          { title: 'Design Rationale', details: ['Explain your design choices, how they address challenges, and why specific tools or frameworks were selected.'] },
+          { title: 'Scalability, Security, and Ethical AI Use', details: ['Demonstrate how your solution ensures scalability, security, and avoids ethical pitfalls (e.g., bias or data privacy concerns).'] },
+          { title: 'Innovation', details: ['Highlight any innovative features or unique approaches in your design.'] },
+          { title: 'Video', details: ['Create a video (not exceeding 2 minutes) to walk through your presentation and explain the architecture visually.'] }
+        ]"
+        ></app-expandable>      
         <app-expandable
             [title]="'Option 2: Platform Development Challenge'"
+            [scoringSheet]="'../../../assets/scoring_sheets/option_2.pdf'"
             [description]="'Develop a functional platform that addresses challenges in your chosen topic. Focus on:'"
             [points]="[
                 { title: 'Functionality', details: 'Build a solution that works effectively for your target audience.' },
