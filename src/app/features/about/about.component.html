@@ -56,31 +56,33 @@ dark:bg-gradient-to-bl dark:from-purple-700 dark:to-purple-900 dark:via-purple-8
           <!-- First Place -->
           <div class="flex-1 bg-yellow-500 text-white p-8 rounded-lg shadow-lg text-center">
             <h3 class="text-3xl font-bold mb-4">First Place</h3>
-            <ul class="text-lg list-none text-left mx-auto max-w-sm">
-              <li>Microsoft office tour, referral, lunch & $50 Gift card</li>
+            <ul class="text-lg text-left list-disc mx-auto max-w-sm px-2">
+              <li>4 HackHive Hoodies</li>
+              <li>Ontario Tech Merch</li>
+              <li>Microsoft office tour, referral, lunch & $50 gift cards</li>
               <li>Dayforce Technical Interview</li>
-              <li>4 Hackhive Hoodies</li>
-              <li>Stanley Cups</li>
             </ul>
           </div>
 
           <!-- Second Place -->
           <div class="flex-1 bg-gradient-to-r from-gray-300 to-gray-500 text-black p-8 rounded-lg shadow-lg text-center">
             <h3 class="text-3xl font-bold mb-4">Second Place</h3>
-            <ul class="text-lg list-none text-left mx-auto max-w-sm">
-              <li>Dayforce Technical Interview</li>
+            <ul class="text-lg list-disc text-left mx-auto max-w-sm px-2">
+              <li>4 HackHive Shirts</li>
               <li>Ontario Tech Merch</li>
-              <li>4 Hackhive Shirts</li>
+              <li>Microsoft office tour and referral</li>
+              <li>Dayforce Technical Interview</li>
             </ul>
           </div>
 
           <!-- Third Place -->
           <div class="flex-1 bg-gradient-to-r from-[#cd7f32] to-[#a97142] text-white p-8 rounded-lg shadow-lg text-center">
             <h3 class="text-3xl font-bold mb-4">Third Place</h3>
-            <ul class="text-lg list-none text-left mx-auto max-w-sm">
-              <li>Dayforce Technical Interview</li>
+            <ul class="text-lg list-disc text-left mx-auto max-w-sm px-2">
+              <li>4 HackHive Shirts</li>
               <li>Ontario Tech Merch</li>
-              <li>4 Hackhive Shirts</li>
+              <li>Microsoft office tour and referral</li>
+              <li>Dayforce Technical Interview</li>
             </ul>
           </div>
 
@@ -103,8 +105,20 @@ dark:bg-gradient-to-bl dark:from-purple-700 dark:to-purple-900 dark:via-purple-8
         </div>
 
         <div class="py-4">
-          <h3 class="text-2xl font-bold">Support</h3>
-          <p>Mentors and resources will be available throughout the event to guide participants.</p>
+          <h3 class="text-2xl font-bold mb-2">Devpost</h3>
+          <p class="mb-5">The GitHub Repository lin and all presentation materials must be submitted on devpost by 8:00 AM on Sunday, February 9th</p>
+          <div appFeatureReveal="2025-02-07T19:05:00" class="flex justify-center">
+            <a 
+              class="bg-yellow-500 text-white py-2 px-4 text-xl rounded-full hover:bg-yellow-600 font-bold" 
+              href="https://hackhive-otu.devpost.com/"
+              target="_blank"
+            >Devpost Link</a>
+          </div>
+        </div>
+
+        <div class="py-4">
+          <h3 class="text-2xl font-bold">Judging</h3>
+          <p>All presentations to judges must be between 5 and 7 minutes.</p>
         </div>
       </div>
     </section>
@@ -163,7 +177,7 @@ dark:bg-gradient-to-bl dark:from-purple-700 dark:to-purple-900 dark:via-purple-8
 
     <!--Presentation options-->
     <section class="bg-[var(--background)] flex flex-col items-center p-8 gap-4 pb-4">
-       <div appFeatureReveal="2025-02-07T19:05:00">
+       <!-- <div appFeatureReveal="2025-02-07T19:05:00"> -->
         <app-expandable
         [title]="'Option 1: AI Solution Design & Strategy Challenge'"
         [scoringSheet]="'../../../assets/scoring_sheets/option_1.pdf'"
@@ -206,7 +220,7 @@ dark:bg-gradient-to-bl dark:from-purple-700 dark:to-purple-900 dark:via-purple-8
                 { title: 'Demo Video', details: ['Include a video (not exceeding 5 minutes) showcasing a working model of your platform, demonstrating its features and functionality.'] }
             ]">
         </app-expandable>
-      </div>
+      <!-- </div> -->
     </section>
 
 
